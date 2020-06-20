@@ -13,6 +13,9 @@
 #define NO_KEY 'n'
 void KeypadBegin(const int rows[4], const int cols[4], char data[4][4]);
 char KeypadRead(void);
+char analogKeypadRead(void);
+void analogKeypadBegin(unsigned int channel,unsigned int KayValues[4][4], char data[4][4]);
+void analogKeypadCalibration(unsigned int channel);
 #ifdef	__cplusplus
 extern "C" {
 #endif
