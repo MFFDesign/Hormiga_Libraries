@@ -51,7 +51,12 @@ unsigned int RaizCuadrada(unsigned int numero)
     {
         residuo = i * i;
         
-        if(residuo >= numero)
+        if(residuo > numero)
+        {
+            cont = i - 1;
+            break;
+        }
+        else if(residuo = numero)
         {
             cont = i;
             break;
