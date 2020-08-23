@@ -1,4 +1,4 @@
-#include "system.h"
+#include "Hormiga877.h"
 #include "AD9850.h"
 //AD9850
 
@@ -30,148 +30,115 @@
 	(Fout << 5) + 2 = Tw
 	
 */
+uint8_t DataPort = 0;
+uint8_t DDSRegister[5] = {0,0,0,0,0};
+uint8_t Reloj = 0;
+uint8_t FrUpdate = 0;
+uint8_t DDSPhase = 0;
+unsigned int R = 10;
 
-char dataFreqPort[8] = {0,0,0,0,0,0,0,0};
-char DDSRegister[5] = {0,0,0,0,0};
-char Reloj = 0;
-char FrUpdate = 0;
-char DDSPhase = 0;
-
-void DDSBegin(char PORT[8], char CLK, char FUD, char RST)
+void DDSBegin(uint8_t PORT, uint8_t CLK, uint8_t FUD, uint8_t RST)
 {
 	DDSRegister[0] = 0x04;
 	Reloj = CLK;
 	FrUpdate = FUD;
+	DataPort = PORT;
 	pinMode(RST,OUTPUT);
 	pinMode(FUD,OUTPUT);
 	pinMode(CLK,OUTPUT);
-	digitalWrite(RST,HIGH);
-	digitalWrite(FUD,LOW);
-	digitalWrite(CLK,LOW);
-	digitalWrite(RST,LOW);
-	for(char i=0;i<8;i++)
-	{
-		pinMode(PORT[i],OUTPUT);
-		dataFreqPort[i] = PORT[i];
-		digitalWrite(PORT[i],LOW);
-	}
+    pinMode(PORT,0x00);
+    digitalWrite(PORT,0x00);
+    digitalWrite(RST,HIGH);
+    digitalWrite(FUD,LOW);
+    delay(R);
+    digitalWrite(RST,LOW);
+    digitalWrite(FUD,HIGH);
+    delay(R);
+    digitalWrite(FUD,LOW);
 	for(char i=0;i<5;i++)
 	{
-		WritePort(dataFreqPort,DDSRegister[i]);
-		digitalWrite(Reloj,HIGH);
-		delay(50);
-		digitalWrite(Reloj,LOW);
-		delay(50);
+		digitalWrite(PORT,DDSRegister[i]);
+		digitalWrite(CLK,HIGH);
+		delay(R);
+		digitalWrite(CLK,LOW);
+		delay(R);
 	}
-	digitalWrite(FrUpdate,HIGH);
-	delay(50);
-	digitalWrite(FrUpdate,LOW);
-	delay(50);
+	digitalWrite(FUD,HIGH);
+	delay(R);
+	digitalWrite(FUD,LOW);
 }
 
 void SetFreq(double Frequency)
 {
 	uint32_t temp = 0;
 	temp = Frequency / TuneRes;
-	DDSRegister[1] = temp & 0xFF;
-	DDSRegister[2] = (temp >> 8) & 0xFF;
-	DDSRegister[3] = (temp >> 16) & 0xFF;
-	DDSRegister[4] = (temp >> 24) & 0xFF;
-	for(char i=0;i<5;i++)
+    DDSRegister[0] = 0x00;
+	DDSRegister[4] = temp & 0xFF;
+	DDSRegister[3] = (temp >> 8);
+	DDSRegister[2] = (temp >> 16);
+	DDSRegister[1] = (temp >> 24);
+    digitalWrite(FrUpdate,HIGH);
+	delay(10);
+	digitalWrite(FrUpdate,LOW);
+	delay(10);
+	for(uint8_t i=0;i<5;i++)
 	{
-		WritePort(dataFreqPort,DDSRegister[i]);
+		digitalWrite(DataPort,DDSRegister[i]);
 		digitalWrite(Reloj,HIGH);
-		delay(50);
+		delay(10);
 		digitalWrite(Reloj,LOW);
-		delay(50);
+		delay(10);
 	}
 	digitalWrite(FrUpdate,HIGH);
-	delay(50);
+	delay(10);
 	digitalWrite(FrUpdate,LOW);
-	delay(50);
-}
-char SetFrequency(unsigned long Freq) //Hertz
-{
-	unsigned long temp = 0;
-	temp = (Freq << 5) + 2;
-	/*
-		DDSRegister[4] = temp & 0x0F;
-		DDSRegister[3] = (temp >> 8) & 0xFF;
-		DDSRegister[2] = (temp >> 16) & 0F0F;
-		DDSRegister[1] = (temp >> 24) & 0xFF;
-	*/
-	for(char i=0;i<4;i++)
-	{
-		DDSRegister[4-i] = (temp >> i*8) & 0xFF;
-	}
-	for(char i=0;i<5;i++)
-	{
-		WritePort(dataFreqPort,DDSRegister[i]);
-		digitalWrite(Reloj,HIGH);
-		delay(50);
-		digitalWrite(Reloj,LOW);
-		delay(50);
-	}
-	digitalWrite(FrUpdate,HIGH);
-	delay(50);
-	digitalWrite(FrUpdate,LOW);
-	delay(50);
+	delay(10);
 }
 
-void SetPhase(unsigned int phase) //Degrees
+void SetPhase(double phase) //Degrees
 {
 	char temp = phase / MinIncrement;
-	temp = (temp << 3) & 0x0C;
+	temp = temp << 3;
 	DDSRegister[0] = temp;
+    digitalWrite(FrUpdate,HIGH);
+	delay(10);
+	digitalWrite(FrUpdate,LOW);
+	delay(10);
 	for(char i=0;i<5;i++)
 	{
-		WritePort(dataFreqPort,DDSRegister[i]);
+		digitalWrite(DataPort,DDSRegister[i]);
 		digitalWrite(Reloj,HIGH);
-		delay(50);
+		delay(10);
 		digitalWrite(Reloj,LOW);
-		delay(50);
+		delay(10);
 	}
 	digitalWrite(FrUpdate,HIGH);
-	delay(50);
+	delay(10);
 	digitalWrite(FrUpdate,LOW);
-	delay(50);
-}
-
-void WritePort(char PORT[8],char data)
-{
-	char temp = 0;
-	for(int i=0;i<8;i++)
-	{
-		temp = (data >> i) & 0x01;
-		if(temp == 1)
-		{
-			digitalWrite(PORT[i],HIGH);
-		}
-		else
-		{
-			digitalWrite(PORT[i],LOW);
-		}
-	}
+	delay(10);
 }
 
 void SetTunningWord(char Frequency[4], char phase)
 {
-	char temp[5] = {0,0,0,0,0};
-	temp[0] = (phase << 3) & 0x0C;
-	temp[1] = Frequency[3];
-	temp[2] = Frequency[2];
-	temp[3] = Frequency[1];
-	temp[4] = Frequency[0];
+	DDSRegister[0] = phase << 3; //& 0x04;
+	DDSRegister[1] = Frequency[0];
+	DDSRegister[2] = Frequency[1];
+	DDSRegister[3] = Frequency[2];
+	DDSRegister[4] = Frequency[3];
+    digitalWrite(FrUpdate,HIGH);
+	delay(R);
+	digitalWrite(FrUpdate,LOW);
+	delay(R);
 	for(char i=0;i<5;i++)
 	{
-		WritePort(dataFreqPort,DDSRegister[i]);
+		digitalWrite(DataPort,DDSRegister[i]);
 		digitalWrite(Reloj,HIGH);
-		delay(50);
+		delay(R);
 		digitalWrite(Reloj,LOW);
-		delay(50);
+		delay(R);
 	}
 	digitalWrite(FrUpdate,HIGH);
-	delay(50);
+	delay(R);
 	digitalWrite(FrUpdate,LOW);
-	delay(50);
+
 }

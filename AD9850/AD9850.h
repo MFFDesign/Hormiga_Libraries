@@ -8,10 +8,9 @@
 #ifndef AD9850_H
 #define	AD9850_H
 
-void DDSBegin(char PORT[8], char CLK, char FUD, char RST);
-char SetFrequency(unsigned long Freq);
-void SetPhase(unsigned int phase);
-void WritePort(char PORT[8],char data);
+void DDSBegin(uint8_t PORT, uint8_t CLK, uint8_t FUD, uint8_t RST);
+void SetFreq(double Frequency);
+void SetPhase(double phase);
 void SetTunningWord(char Frequency[4], char phase);
 #ifdef	__cplusplus
 extern "C" {
