@@ -1,4 +1,4 @@
-#include "Hormiga877.h"
+#include "system.h"
 #include "AD9850.h"
 //AD9850
 

@@ -10,7 +10,7 @@
 
 void DDSBegin(uint8_t PORT, uint8_t CLK, uint8_t FUD, uint8_t RST);
 void SetFreq(double Frequency);
-void SetPhase(double phase);
+void SetPhase(double phase); //Degrees
 void SetTunningWord(char Frequency[4], char phase);
 #ifdef	__cplusplus
 extern "C" {
