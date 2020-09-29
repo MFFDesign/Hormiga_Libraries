@@ -11,10 +11,18 @@
 #include <xc.h>
 #include <stdint.h>
 #define NO_KEY 'n'
-void KeypadBegin(const int rows[4], const int cols[4], char data[4][4]);
+
+//////////using PORTB
+uint8_t KeypadBegin8TO15(const uint8_t ROWSNibble, const uint8_t COLSNibble, unsigned char *Keyclas);
+char Keypad8TO15Read(void);
+
+///// Mixed GPIO (Digital Generalization))
+void KeypadBegin(unsigned char *rows, unsigned char *cols, unsigned char *data);
 char KeypadRead(void);
+
+///// analog signal Method
 char analogKeypadRead(void);
-void analogKeypadBegin(unsigned int channel,unsigned int KayValues[4][4], char data[4][4]);
+void analogKeypadBegin(uint8_t channel,unsigned int *KayValues, unsigned char *data);
 void analogKeypadCalibration(unsigned int channel);
 #ifdef	__cplusplus
 extern "C" {
