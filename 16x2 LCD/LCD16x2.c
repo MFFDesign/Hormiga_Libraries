@@ -1,4 +1,4 @@
-#include "system.h"
+#include "Hormiga877.h"
 #include "LCD16x2.h"
 /*
  * 
@@ -7,13 +7,13 @@
  * 
  */
 
-int RSPin = 0;
-int ENPin = 0;
-int RWPin = 0;
-int d4Pin = 0;
-int d5Pin = 0;
-int d6Pin = 0;
-int d7Pin = 0;
+uint8_t RSPin = 0;
+uint8_t ENPin = 0;
+uint8_t RWPin = 0;
+uint8_t d4Pin = 0;
+uint8_t d5Pin = 0;
+uint8_t d6Pin = 0;
+uint8_t d7Pin = 0;
 
 void lcdBegin(char RS, char EN, char R_W, char d4, char d5, char d6,char d7)
 {
@@ -65,6 +65,7 @@ void lcdWrite(char data)
     delay(8);
     WriteData(data);
 }
+
 void lcdPrint(char *string)
 {
     for(int i=0;string[i] != '\0';i++)
@@ -73,53 +74,6 @@ void lcdPrint(char *string)
     }
 }
 
-
-void lcdShiftRight(void)
-{
-    lcdCommand(0x01,INSTRUCTION);
-    lcdCommand(0x0C,INSTRUCTION);
-}
-void lcdShiftLeft(void)
-{
-    lcdCommand(0x01,INSTRUCTION);
-    lcdCommand(0x08,INSTRUCTION);
-}
-void lcdWritePort(char data)
-{
-    if(data & 0x01)
-    {
-        digitalWrite(d4Pin,HIGH);
-    }
-    else
-    {
-        digitalWrite(d4Pin,LOW);
-    }
-    if(data & 0x02)
-    {
-        digitalWrite(d5Pin,HIGH);
-    }
-    else
-    {
-        digitalWrite(d5Pin,LOW);
-    }
-    if(data & 0x04)
-    {
-        digitalWrite(d6Pin, HIGH);
-    }
-    else
-    {
-        digitalWrite(d6Pin,LOW);
-    }
-    if(data & 0x08)
-    {
-        digitalWrite(d7Pin,HIGH);
-    }
-    else
-    {
-        digitalWrite(d7Pin,LOW);
-    }
-    
-}
 
 void WriteInstruction(char instruction)
 {
@@ -269,3 +223,163 @@ void ByteByNibble(char NibbleValue)
             break; 
     }
 }
+
+/*
+ * Pendientes de Revisar
+ * 
+void BlinkCursor(char mode)
+{
+	digitalWrite(RWT,LOW);
+	digitalWrite(RST,LOW);
+	if(mode == ENABLE)
+	{
+		lcdWriteByte(0x09); //BlinkCursor ON
+		delay(5);
+	}
+	else if(mode == DISABLE)
+	{
+		lcdWriteByte(0x08); //BlinkCursor OFF
+		delay(5);
+	}
+	
+	
+}
+void ShowCursor(char mode)
+{
+	digitalWrite(RWT,LOW);
+	digitalWrite(RST,LOW);
+	if(mode == ENABLE)
+	{
+		lcdWriteByte(0x0A); //Cursor ON
+		delay(5);
+	}
+	else if(mode == DISABLE)
+	{
+		lcdWriteByte(0x08); //Cursor OFF
+		delay(5);
+	}
+}
+void Display(char mode)
+{
+	digitalWrite(RWT,LOW);
+	digitalWrite(RST,LOW);
+	if(mode == ENABLE)
+	{
+		lcdWriteByte(0x0C); //Display ON
+		delay(5);
+	}
+	else if(mode == DISABLE)
+	{
+		lcdWriteByte(0x08); //Display OFF
+		delay(5);
+	}
+}
+
+void ReturnHome(void)
+{
+	digitalWrite(RWT,LOW);
+	digitalWrite(RST,HIGH);
+	lcdWriteByte(RHome);
+	delay(5);
+}
+ 
+void ShiftTextLeft(void)
+{
+	digitalWrite(RWT,LOW);
+	digitalWrite(RST,HIGH);
+	lcdWriteByte(0x18); // Recorrer una posicion a la izquierda 0b 0001 1000 = 0x18;
+	delay(5);
+}
+void ShiftTextRight(void)
+{
+	digitalWrite(RWT,LOW);
+	digitalWrite(RST,HIGH);
+	lcdWriteByte(0x1F); // Recorrer una posicion a la derecha
+	delay(5);
+}
+void lcdWriteByte(char data) 
+{
+	char LSNibble = 0x0F & data;
+	char MSNibble = data >> 4;   
+	char temp = 0x00;
+	
+	for(char i=0;i<4;i++)
+	{
+		temp = (MSNibble >> i) & 0x01;
+		if(temp)
+		{
+			digitalWrite(Terminals[i],HIGH);
+		}
+		else
+		{
+			digitalWrite(Terminals[i],LOW);
+		}
+	}
+	digitalWrite(ETG,HIGH);
+	delay(10);
+	digitalWrite(ETG,LOW);
+	delay(10);
+	for(char i=0;i<4;i++)
+	{
+		temp = (LSNibble >> i) & 0x01;
+		if(temp)
+		{
+			digitalWrite(Terminals[i],HIGH);
+		}
+		else
+		{
+			digitalWrite(Terminals[i],LOW);
+		}
+	}
+	digitalWrite(ETG,HIGH);
+	delay(10);
+	digitalWrite(ETG,LOW);
+	delay(10);
+}
+void lcdWriteByte(char data)
+{
+	char temp = 0;
+	for(char i=0;i<8;i++)
+	{
+		temp = (data >> i) & 0x01;
+		if(i < 3)
+		{
+			if(temp)
+			{
+				digitalWrite(Terminals[i],HIGH);
+			}
+			else
+			{
+				digitalWrite(Terminals[i],LOW);
+			}
+		}
+		else if(i == 3)
+		{
+			if(temp)
+			{
+				digitalWrite(Terminals[i],HIGH);
+			}
+			else
+			{
+				digitalWrite(Terminals[i],LOW);
+			}
+			delay(10);
+			digitalWrite(ET,HIGH);
+			delay(10);
+			digitalWrite(ET,LOW);
+		}
+		else
+		{
+			if(temp)
+			{
+				digitalWrite(Terminals[i-4],HIGH);
+			}
+			else
+			{
+				digitalWrite(Terminals[i-4],LOW);
+			}
+		}
+		
+	}
+}
+ */
