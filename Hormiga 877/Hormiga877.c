@@ -4,7 +4,7 @@ int main(void)
 {
     Initialization();
     setup();
-    while(1)
+    for(;;)
     {
         loop();
     }
@@ -550,7 +550,7 @@ void delay(const int milis)
     for(int j=0;j<milis;j++)
     {
         //Retardo de 1ms
-        for(int i=0;i<400;i++)
+        for(int i=0;i<235;i++)
         {
             asm("NOP");
         }
