@@ -27,6 +27,7 @@
 #define _XTAL_FREQ 20000000
 #define TMR2PRESCALE 4
 
+void Positioner(unsigned int Count);
 // System Configuration
 void Initialization(void);
 void PWMConfiguration(void);
@@ -57,6 +58,9 @@ void SerialReadText(char *Output, unsigned int lenght);
 //time
 void delay(const int milis);
 void delayMicroseconds(const int us);
+void __interrupt() TimeCounter(void);
+void TimerOneInterruptEnable(void);
+void TimerOneInterruptDisable(void);
 #ifdef	__cplusplus
 extern "C" {
 #endif

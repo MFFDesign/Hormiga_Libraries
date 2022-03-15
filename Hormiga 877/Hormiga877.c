@@ -418,18 +418,43 @@ uint8_t analogWrite(char pin, unsigned int value)
     }
     return 0;
 }
+
 char PBRead(char pin)
 {
     switch(pin)
     {
         case 0:
-            return PORTEbits.RE0;
+            if(PORTEbits.RE0)
+            {
+                delay(25);
+                return (PORTEbits.RE0) ? 1 : 0;
+            }
+            else
+            {
+                return 0;
+            }
             break;
         case 1:
-            return PORTEbits.RE1;
+            if(PORTEbits.RE1) 
+            {
+                delay(25);
+                return (PORTEbits.RE1) ? 1 : 0;
+            }
+            else
+            {
+                return 0;
+            }
             break;
         case 2:
-            return PORTEbits.RE2;
+            if(PORTEbits.RE2) 
+            {
+                delay(25);
+                return (PORTEbits.RE2) ? 1 : 0;
+            }
+            else
+            {
+                return 0;
+            }
             break;
     }
 }
