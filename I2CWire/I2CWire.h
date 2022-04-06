@@ -1,23 +1,23 @@
 /* 
  * File:   I2CWire.h
- * Author: user
+ * Author: ToncheLAP
  *
- * Created on June 26, 2020, 4:45 PM
+ * Created on April 1, 2022, 2:33 PM
  */
 
 #ifndef I2CWIRE_H
 #define	I2CWIRE_H
 
-#define SLAVE 0x00
-#define MASTER 0x01
+void I2CStartTransaction(void);
+void I2CIDLECheck(void);
+char  I2CWriteByte(char databyte);
+char I2CReadByte(void);
+void I2CRepeatTransaction(void);
+void I2CStopTransaction(void);
+void I2CBegin(const unsigned long Hertz) ;
+void I2CACK(void);
+void I2CNACK(void);
 
-void I2CBegin(char Operation, const unsigned long param);
-void I2CMasterWaiting(void);
-void I2CMasterStart(void);
-void I2CMasterRepeatedStart(void);
-void I2CMasterStop(void);
-void I2CMasterWrite(unsigned d);
-unsigned short I2CMasterRead(unsigned short a);
 #ifdef	__cplusplus
 extern "C" {
 #endif

@@ -1,67 +1,69 @@
-#include "system.h"
+#include "Hormiga877.h"
 #include "I2CWire.h"
 
-void I2CBegin(char Operation, const unsigned long param)
+void I2CBegin(const unsigned long Hertz) //Set to 100KHz
 {
-    switch(Operation)
-    {
-        case MASTER:
-            SSPCON = 0b00101000;            //SSP Module as Master
-            SSPCON2 = 0;
-            SSPADD = (_XTAL_FREQ/(4*param))-1; //Setting Clock Speed
-            SSPSTAT = 0;
-            TRISC3 = 1;                   //Setting as input as given in datasheet
-            TRISC4 = 1;    
-            break;
-        case SLAVE:
-            SSPSTAT = 0x80;    
-            SSPADD = param; //Setting address
-            SSPCON = 0x36;    //As a slave device
-            SSPCON2 = 0x01;
-            TRISC3 = 1;       //Setting as input as given in datasheet
-            TRISC4 = 1;       //Setting as input as given in datasheet
-            GIE = 1;          //Global interrupt enable
-            PEIE = 1;         //Peripheral interrupt enable
-            SSPIF = 0;        //Clear interrupt flag
-            SSPIE = 1;        //Synchronous serial port interrupt enable
-            break;
-    }
-}
-void I2CMasterWaiting()
-{
-  while ((SSPSTAT & 0x04) || (SSPCON2 & 0x1F)); //Transmit is in progress
+    TRISC3 = 1; //Set  Input SCL
+    TRISC4 = 1; //Set as Input SDA
+    SSPCON = 0x28; //I2C Master Mode, clock  = Fosc / 4 * (SSPADD + 1))
+    SSPCON2 = 0x00;
+    SSPADD =(_XTAL_FREQ/(4*Hertz)) - 1;;// 0x2F; //100KHz;//(_XTAL_FREQ / (4 * VTrans)) - 1;  // (4 * 100 * VTransfer) SCL FRequency needs to be Check
+    SSPSTAT = 0x00; // It holds aditional configurations asSMP and CKD, Needs to be checked
+    __delay_us(75); //Trigger to OSCX
 }
 
-void I2CMasterStart(void)
+void I2CStartTransaction(void)
 {
-  I2CMasterWaiting();    
-  SEN = 1;             //Initiate start condition
-}
-void I2CMasterRepeatedStart(void)
-{
-  I2CMasterWaiting();
-  RSEN = 1;           //Initiate repeated start condition
-}
-void I2CMasterStop(void)
-{
-  I2CMasterWaiting();
-  PEN = 1;           //Initiate stop condition
-}
-void I2CMasterWrite(unsigned d)
-{
-  I2CMasterWaiting();
-  SSPBUF = d;         //Write data to SSPBUF
+    while ((SSPCON2 & 0x1F) || (SSPSTAT & 0x04)) ;
+    SEN = 1;
 }
 
-unsigned short I2CMasterRead(unsigned short a)
+void I2CIDLECheck(void)
 {
-  unsigned short temp;
-  I2CMasterWaiting();
-  RCEN = 1;
-  I2CMasterWaiting();
-  temp = SSPBUF;      //Read data from SSPBUF
-  I2CMasterWaiting();
-  ACKDT = (a)?0:1;    //Acknowledge bit
-  ACKEN = 1;          //Acknowledge sequence
-  return temp;
+    while ((SSPCON2 & 0x1F) || (SSPSTAT & 0x04)) ;
+}
+char  I2CWriteByte(char databyte)
+{
+    I2CIDLECheck();
+    SSPBUF = databyte;
+    while(!SSPIF); // check if transaction is done
+    SSPIF = 0;
+    return ACKSTAT;
+}
+
+void I2CRepeatTransaction(void)
+{
+    I2CIDLECheck();
+    RSEN = 1;
+}
+
+void I2CStopTransaction(void)
+{
+    I2CIDLECheck();
+    PEN = 1;
+}
+
+char I2CReadByte(void)
+{
+    I2CIDLECheck();
+    RCEN = 1; //Enable Recive Mode I2C
+    while(!SSPIF); //Waits until the trasaction is done
+    SSPIF = 0; // clear Flag
+    I2CIDLECheck();
+    return SSPBUF;
+}
+
+
+void I2CACK(void)
+{
+    ACKDT = 0;
+    I2CIDLECheck();
+    ACKEN = 1; //Send ACK
+}
+
+void I2CNACK(void)
+{
+    ACKDT = 1;
+    I2CIDLECheck();
+    ACKEN = 1; //Send NACK
 }
