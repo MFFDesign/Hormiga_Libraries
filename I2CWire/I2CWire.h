@@ -17,6 +17,7 @@ void I2CStopTransaction(void);
 void I2CBegin(const unsigned long Hertz) ;
 void I2CACK(void);
 void I2CNACK(void);
+char ScanDevices(char *ResultList, char TotalDevices);
 
 #ifdef	__cplusplus
 extern "C" {

@@ -67,3 +67,27 @@ void I2CNACK(void)
     I2CIDLECheck();
     ACKEN = 1; //Send NACK
 }
+
+char ScanDevices(char *ResultList, char TotalDevices)
+{
+    char buffer = 0;
+    char counter = 0;
+    for(char address = 0; address < 127;address++)
+    {
+        if(counter < TotalDevices)
+        {
+            I2CStartTransaction();
+            if(!I2CWriteByte(address << 1))
+            {
+                buffer = address & 0xF0;
+                buffer = buffer << 1;
+                buffer |= (address & 0x0F);
+                buffer = buffer >> 1;
+                ResultList[counter] = buffer;
+                counter++;
+            }
+        }
+        I2CStopTransaction();
+    }
+    return counter;
+}
