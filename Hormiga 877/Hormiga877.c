@@ -20,16 +20,17 @@ void Initialization(void)
     asm("CLRF PORTA"); //All Terminal as Inputs. only RA4 as digital Inpuy
     asm("MOVLW 0x3F");
     asm("MOVWF TRISA");
-    //TRISB = 0xFF; //all pins as Ouptus by default and low State
-    asm("CLRF PORTB");
-    asm("MOVLW 0x00");
-    asm("MOVWF TRISB");
-    asm("CLRF PORTB");
+    PORTB = 0x00;
+    TRISB &= 0x00;
+    PORTB = 0x00;
     //PORTC Configuration
-    asm("CLRF PORTC");
-    asm("MOVLW 0x00");
-    asm("MOVWF TRISC");
-    asm("CLRF PORTC");
+    PORTC = 0x00;
+    TRISC = 0x00;
+    PORTC = 0x00;
+//    asm("CLRF PORTC");
+//    asm("MOVLW 0x00");
+//    asm("MOVWF TRISC");
+//    asm("CLRF PORTC");
     PWMConfiguration();
     //PORTD Configuration
     asm("CLRF PORTD");
@@ -44,6 +45,8 @@ void PWMConfiguration(void)
 {
     PR2 = 0xFF;
     T2CON = 0x05; //Tmier 2 prescaler equals 
+    CCPR2L = 0x00;
+    CCPR1L = 0x00;
     CCP1CON = 0x0C;//0x4F; //0100 1111 //New Value 0000 1100
     CCP2CON = 0x0C;//0x4F;
 }
@@ -426,7 +429,7 @@ char PBRead(char pin)
         case 0:
             if(PORTEbits.RE0)
             {
-                delay(25);
+                delay(100);
                 return (PORTEbits.RE0) ? 1 : 0;
             }
             else
@@ -437,7 +440,7 @@ char PBRead(char pin)
         case 1:
             if(PORTEbits.RE1) 
             {
-                delay(25);
+                delay(100);
                 return (PORTEbits.RE1) ? 1 : 0;
             }
             else
@@ -448,7 +451,7 @@ char PBRead(char pin)
         case 2:
             if(PORTEbits.RE2) 
             {
-                delay(25);
+                delay(120);
                 return (PORTEbits.RE2) ? 1 : 0;
             }
             else
