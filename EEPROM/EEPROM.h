@@ -11,6 +11,7 @@
 void EEPROMSave(char addr, char data);
 char  EEPROMRead(char addr);
 void SaveData(unsigned int Data, char InitAddress);
+unsigned int ReadData(char Address);
 
 #ifdef	__cplusplus
 extern "C" {

@@ -32,3 +32,12 @@ void SaveData(unsigned int Data, char InitAddress)
     buffer = Data & 0xFF;
     EEPROMSave(buffer, InitAddress + 1);
 }
+
+unsigned int  ReadData(char Address)
+{
+    char buffer = 0;
+    char bufferB = 0;
+    buffer = EEPROMRead(Address);
+    bufferB = EEPROMRead(Address + 1);
+    return (buffer << 8) + bufferB;
+}
