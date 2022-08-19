@@ -1,0 +1,900 @@
+Version 4.0 HI-TECH Software Intermediate Code
+"21 LIFPIC.c
+[; ;LIFPIC.c: 21: enum MaquinaEstados Estado;
+[c E938 0 1 2 .. ]
+[n E938 MaquinaEstados Enviar Recibir Decode  ]
+"45 ./Hormiga877.h
+[v _SerialBegin `(uc ~T0 @X0 0 ef1`Cl ]
+"36
+[; ;./Hormiga877.h: 36: void delay(const int milis);
+[v _pinMode `(v ~T0 @X0 0 ef2`uc`uc ]
+"16 ./Ultrasonico.h
+[; ;./Ultrasonico.h: 16:     void USBegin(char trigger, char echo);
+[v _USBegin `(v ~T0 @X0 0 ef2`uc`uc ]
+"37 ./Hormiga877.h
+[; ;./Hormiga877.h: 37: void delayMicroseconds(const int us);
+[v _digitalWrite `(v ~T0 @X0 0 ef2`uc`uc ]
+"53
+[v _SerialRead `(uc ~T0 @X0 0 ef ]
+"48
+[v _SerialWrite `(v ~T0 @X0 0 ef1`uc ]
+"52
+[v _SerialAvailable `(uc ~T0 @X0 0 ef ]
+"10 ./LIFPIC.h
+[; ;./LIFPIC.h: 10: uint16_t ProcessCommand(uint8_t instruction, uint8_t port, uint8_t MSBData, uint8_t LSBData);
+[v _ProcessCommand `(ui ~T0 @X0 0 ef4`uc`uc`uc`uc ]
+"38 ./Hormiga877.h
+[; ;./Hormiga877.h: 38: void __attribute__((picinterrupt(""))) TimeCounter(void);
+[v _digitalRead `(uc ~T0 @X0 0 ef1`uc ]
+"39
+[; ;./Hormiga877.h: 39: void TimerOneInterruptEnable(void);
+[v _analogRead `(ui ~T0 @X0 0 ef1`uc ]
+"40
+[; ;./Hormiga877.h: 40: void TimerOneInterruptDisable(void);
+[v _analogWrite `(uc ~T0 @X0 0 ef2`uc`ui ]
+"35
+[; ;./Hormiga877.h: 35: 
+[v _PBRead `(uc ~T0 @X0 0 ef1`uc ]
+"216 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 216: extern volatile unsigned char PORTB __attribute__((address(0x006)));
+[v _PORTB `Vuc ~T0 @X0 0 e@6 ]
+"340
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 340: extern volatile unsigned char PORTD __attribute__((address(0x008)));
+[v _PORTD `Vuc ~T0 @X0 0 e@8 ]
+"15 ./Ultrasonico.h
+[; ;./Ultrasonico.h: 15:     unsigned int USRead(char trigger, char echo);
+[v _USRead `(ui ~T0 @X0 0 ef2`uc`uc ]
+"1375 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 1375: extern volatile unsigned char TRISB __attribute__((address(0x086)));
+[v _TRISB `Vuc ~T0 @X0 0 e@134 ]
+"1499
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 1499: extern volatile unsigned char TRISD __attribute__((address(0x088)));
+[v _TRISD `Vuc ~T0 @X0 0 e@136 ]
+"54 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 54: __asm("INDF equ 00h");
+[; <" INDF equ 00h ;# ">
+"61
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 61: __asm("TMR0 equ 01h");
+[; <" TMR0 equ 01h ;# ">
+"68
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 68: __asm("PCL equ 02h");
+[; <" PCL equ 02h ;# ">
+"75
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 75: __asm("STATUS equ 03h");
+[; <" STATUS equ 03h ;# ">
+"161
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 161: __asm("FSR equ 04h");
+[; <" FSR equ 04h ;# ">
+"168
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 168: __asm("PORTA equ 05h");
+[; <" PORTA equ 05h ;# ">
+"218
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 218: __asm("PORTB equ 06h");
+[; <" PORTB equ 06h ;# ">
+"280
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 280: __asm("PORTC equ 07h");
+[; <" PORTC equ 07h ;# ">
+"342
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 342: __asm("PORTD equ 08h");
+[; <" PORTD equ 08h ;# ">
+"404
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 404: __asm("PORTE equ 09h");
+[; <" PORTE equ 09h ;# ">
+"436
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 436: __asm("PCLATH equ 0Ah");
+[; <" PCLATH equ 0Ah ;# ">
+"456
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 456: __asm("INTCON equ 0Bh");
+[; <" INTCON equ 0Bh ;# ">
+"534
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 534: __asm("PIR1 equ 0Ch");
+[; <" PIR1 equ 0Ch ;# ">
+"596
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 596: __asm("PIR2 equ 0Dh");
+[; <" PIR2 equ 0Dh ;# ">
+"636
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 636: __asm("TMR1 equ 0Eh");
+[; <" TMR1 equ 0Eh ;# ">
+"643
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 643: __asm("TMR1L equ 0Eh");
+[; <" TMR1L equ 0Eh ;# ">
+"650
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 650: __asm("TMR1H equ 0Fh");
+[; <" TMR1H equ 0Fh ;# ">
+"657
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 657: __asm("T1CON equ 010h");
+[; <" T1CON equ 010h ;# ">
+"732
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 732: __asm("TMR2 equ 011h");
+[; <" TMR2 equ 011h ;# ">
+"739
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 739: __asm("T2CON equ 012h");
+[; <" T2CON equ 012h ;# ">
+"810
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 810: __asm("SSPBUF equ 013h");
+[; <" SSPBUF equ 013h ;# ">
+"817
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 817: __asm("SSPCON equ 014h");
+[; <" SSPCON equ 014h ;# ">
+"887
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 887: __asm("CCPR1 equ 015h");
+[; <" CCPR1 equ 015h ;# ">
+"894
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 894: __asm("CCPR1L equ 015h");
+[; <" CCPR1L equ 015h ;# ">
+"901
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 901: __asm("CCPR1H equ 016h");
+[; <" CCPR1H equ 016h ;# ">
+"908
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 908: __asm("CCP1CON equ 017h");
+[; <" CCP1CON equ 017h ;# ">
+"966
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 966: __asm("RCSTA equ 018h");
+[; <" RCSTA equ 018h ;# ">
+"1061
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 1061: __asm("TXREG equ 019h");
+[; <" TXREG equ 019h ;# ">
+"1068
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 1068: __asm("RCREG equ 01Ah");
+[; <" RCREG equ 01Ah ;# ">
+"1075
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 1075: __asm("CCPR2 equ 01Bh");
+[; <" CCPR2 equ 01Bh ;# ">
+"1082
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 1082: __asm("CCPR2L equ 01Bh");
+[; <" CCPR2L equ 01Bh ;# ">
+"1089
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 1089: __asm("CCPR2H equ 01Ch");
+[; <" CCPR2H equ 01Ch ;# ">
+"1096
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 1096: __asm("CCP2CON equ 01Dh");
+[; <" CCP2CON equ 01Dh ;# ">
+"1154
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 1154: __asm("ADRESH equ 01Eh");
+[; <" ADRESH equ 01Eh ;# ">
+"1161
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 1161: __asm("ADCON0 equ 01Fh");
+[; <" ADCON0 equ 01Fh ;# ">
+"1257
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 1257: __asm("OPTION_REG equ 081h");
+[; <" OPTION_REG equ 081h ;# ">
+"1327
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 1327: __asm("TRISA equ 085h");
+[; <" TRISA equ 085h ;# ">
+"1377
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 1377: __asm("TRISB equ 086h");
+[; <" TRISB equ 086h ;# ">
+"1439
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 1439: __asm("TRISC equ 087h");
+[; <" TRISC equ 087h ;# ">
+"1501
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 1501: __asm("TRISD equ 088h");
+[; <" TRISD equ 088h ;# ">
+"1563
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 1563: __asm("TRISE equ 089h");
+[; <" TRISE equ 089h ;# ">
+"1620
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 1620: __asm("PIE1 equ 08Ch");
+[; <" PIE1 equ 08Ch ;# ">
+"1682
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 1682: __asm("PIE2 equ 08Dh");
+[; <" PIE2 equ 08Dh ;# ">
+"1722
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 1722: __asm("PCON equ 08Eh");
+[; <" PCON equ 08Eh ;# ">
+"1756
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 1756: __asm("SSPCON2 equ 091h");
+[; <" SSPCON2 equ 091h ;# ">
+"1818
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 1818: __asm("PR2 equ 092h");
+[; <" PR2 equ 092h ;# ">
+"1825
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 1825: __asm("SSPADD equ 093h");
+[; <" SSPADD equ 093h ;# ">
+"1832
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 1832: __asm("SSPSTAT equ 094h");
+[; <" SSPSTAT equ 094h ;# ">
+"2001
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 2001: __asm("TXSTA equ 098h");
+[; <" TXSTA equ 098h ;# ">
+"2082
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 2082: __asm("SPBRG equ 099h");
+[; <" SPBRG equ 099h ;# ">
+"2089
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 2089: __asm("CMCON equ 09Ch");
+[; <" CMCON equ 09Ch ;# ">
+"2159
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 2159: __asm("CVRCON equ 09Dh");
+[; <" CVRCON equ 09Dh ;# ">
+"2224
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 2224: __asm("ADRESL equ 09Eh");
+[; <" ADRESL equ 09Eh ;# ">
+"2231
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 2231: __asm("ADCON1 equ 09Fh");
+[; <" ADCON1 equ 09Fh ;# ">
+"2290
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 2290: __asm("EEDATA equ 010Ch");
+[; <" EEDATA equ 010Ch ;# ">
+"2297
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 2297: __asm("EEADR equ 010Dh");
+[; <" EEADR equ 010Dh ;# ">
+"2304
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 2304: __asm("EEDATH equ 010Eh");
+[; <" EEDATH equ 010Eh ;# ">
+"2311
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 2311: __asm("EEADRH equ 010Fh");
+[; <" EEADRH equ 010Fh ;# ">
+"2318
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 2318: __asm("EECON1 equ 018Ch");
+[; <" EECON1 equ 018Ch ;# ">
+"2363
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 2363: __asm("EECON2 equ 018Dh");
+[; <" EECON2 equ 018Dh ;# ">
+"14 ./Hormiga877.h
+[; ;./Hormiga877.h: 14: void digitalWrite(char pin, char value);
+[p x FOSC = HS ]
+"15
+[; ;./Hormiga877.h: 15: char digitalRead(char pin);
+[p x WDTE = OFF ]
+"16
+[; ;./Hormiga877.h: 16: unsigned int analogRead(char channel);
+[p x PWRTE = OFF ]
+"17
+[; ;./Hormiga877.h: 17: uint8_t analogWrite(char pin, unsigned int value);
+[p x BOREN = OFF ]
+"18
+[; ;./Hormiga877.h: 18: void setup(void);
+[p x LVP = ON ]
+"19
+[; ;./Hormiga877.h: 19: void loop(void);
+[p x CPD = OFF ]
+"20
+[; ;./Hormiga877.h: 20: 
+[p x WRT = OFF ]
+"21
+[; ;./Hormiga877.h: 21: 
+[p x CP = OFF ]
+"21 LIFPIC.c
+[; ;LIFPIC.c: 21: enum MaquinaEstados Estado;
+[v _Estado `E938 ~T0 @X0 1 e ]
+"23
+[; ;LIFPIC.c: 23: uint8_t BufferLenght = 4;
+[v _BufferLenght `uc ~T0 @X0 1 e ]
+[i _BufferLenght
+-> -> 4 `i `uc
+]
+"24
+[; ;LIFPIC.c: 24: char Informacion[4];
+[v _Informacion `uc ~T0 @X0 -> 4 `i e ]
+"25
+[; ;LIFPIC.c: 25: char DataEnviar[2];
+[v _DataEnviar `uc ~T0 @X0 -> 2 `i e ]
+"26
+[; ;LIFPIC.c: 26: uint8_t LED = 14;
+[v _LED `uc ~T0 @X0 1 e ]
+[i _LED
+-> -> 14 `i `uc
+]
+"27
+[; ;LIFPIC.c: 27: uint8_t Val = 0;
+[v _Val `uc ~T0 @X0 1 e ]
+[i _Val
+-> -> 0 `i `uc
+]
+"28
+[; ;LIFPIC.c: 28: uint16_t Dato = 0;
+[v _Dato `ui ~T0 @X0 1 e ]
+[i _Dato
+-> -> 0 `i `ui
+]
+"29
+[; ;LIFPIC.c: 29: unsigned int buffer = 0;
+[v _buffer `ui ~T0 @X0 1 e ]
+[i _buffer
+-> -> 0 `i `ui
+]
+"31
+[; ;LIFPIC.c: 31: unsigned char Trigger = 2;
+[v _Trigger `uc ~T0 @X0 1 e ]
+[i _Trigger
+-> -> 2 `i `uc
+]
+"32
+[; ;LIFPIC.c: 32: unsigned char Echo = 3;
+[v _Echo `uc ~T0 @X0 1 e ]
+[i _Echo
+-> -> 3 `i `uc
+]
+"34
+[; ;LIFPIC.c: 34: uint8_t Valor = 0;
+[v _Valor `uc ~T0 @X0 1 e ]
+[i _Valor
+-> -> 0 `i `uc
+]
+"35
+[; ;LIFPIC.c: 35: char dada = 0;
+[v _dada `uc ~T0 @X0 1 e ]
+[i _dada
+-> -> 0 `i `uc
+]
+"36
+[; ;LIFPIC.c: 36: void setup(void)
+[v _setup `(v ~T0 @X0 1 ef ]
+"37
+[; ;LIFPIC.c: 37: {
+{
+[e :U _setup ]
+[f ]
+"38
+[; ;LIFPIC.c: 38:  SerialBegin(9600);
+[e ( _SerialBegin (1 -> -> 9600 `i `l ]
+"39
+[; ;LIFPIC.c: 39:     pinMode(LED,0);
+[e ( _pinMode (2 , -> _LED `uc -> -> 0 `i `uc ]
+"40
+[; ;LIFPIC.c: 40:     USBegin(Trigger,Echo);
+[e ( _USBegin (2 , -> _Trigger `uc -> _Echo `uc ]
+"41
+[; ;LIFPIC.c: 41:  while(Valor != 1)
+[e $U 96  ]
+[e :U 97 ]
+"42
+[; ;LIFPIC.c: 42:  {
+{
+"43
+[; ;LIFPIC.c: 43:         digitalWrite(LED,1);
+[e ( _digitalWrite (2 , -> _LED `uc -> -> 1 `i `uc ]
+"44
+[; ;LIFPIC.c: 44:         dada = SerialRead();
+[e = _dada ( _SerialRead ..  ]
+"45
+[; ;LIFPIC.c: 45:         SerialWrite('k');
+[e ( _SerialWrite (1 -> -> 107 `ui `uc ]
+"46
+[; ;LIFPIC.c: 46:         if(dada == 'k')
+[e $ ! == -> _dada `ui -> 107 `ui 99  ]
+"47
+[; ;LIFPIC.c: 47:         {
+{
+"48
+[; ;LIFPIC.c: 48:             Valor = 1;
+[e = _Valor -> -> 1 `i `uc ]
+"49
+[; ;LIFPIC.c: 49:         }
+}
+[e $U 100  ]
+"50
+[; ;LIFPIC.c: 50:         else
+[e :U 99 ]
+"51
+[; ;LIFPIC.c: 51:         {
+{
+"52
+[; ;LIFPIC.c: 52:             Valor = 0;
+[e = _Valor -> -> 0 `i `uc ]
+"53
+[; ;LIFPIC.c: 53:         }
+}
+[e :U 100 ]
+"54
+[; ;LIFPIC.c: 54:  }
+}
+[e :U 96 ]
+"41
+[; ;LIFPIC.c: 41:  while(Valor != 1)
+[e $ != -> _Valor `i -> 1 `i 97  ]
+[e :U 98 ]
+"55
+[; ;LIFPIC.c: 55:     Valor = 0;
+[e = _Valor -> -> 0 `i `uc ]
+"56
+[; ;LIFPIC.c: 56:     dada = 0;
+[e = _dada -> -> 0 `i `uc ]
+"57
+[; ;LIFPIC.c: 57:     digitalWrite(LED,0);
+[e ( _digitalWrite (2 , -> _LED `uc -> -> 0 `i `uc ]
+"58
+[; ;LIFPIC.c: 58:  Estado = Recibir;
+[e = _Estado . `E938 1 ]
+"59
+[; ;LIFPIC.c: 59: }
+[e :UE 95 ]
+}
+"61
+[; ;LIFPIC.c: 61: void loop(void)
+[v _loop `(v ~T0 @X0 1 ef ]
+"62
+[; ;LIFPIC.c: 62: {
+{
+[e :U _loop ]
+[f ]
+"63
+[; ;LIFPIC.c: 63:  if(SerialAvailable() >= 0)
+[e $ ! >= -> ( _SerialAvailable ..  `i -> 0 `i 102  ]
+"64
+[; ;LIFPIC.c: 64:  {
+{
+"65
+[; ;LIFPIC.c: 65:   switch(Estado)
+[e $U 104  ]
+"66
+[; ;LIFPIC.c: 66:   {
+{
+"67
+[; ;LIFPIC.c: 67:    case Decode:
+[e :U 105 ]
+"69
+[; ;LIFPIC.c: 69:     Dato = ProcessCommand(Informacion[0],Informacion[1],Informacion[2],Informacion[3]);
+[e = _Dato ( _ProcessCommand (4 , , , -> *U + &U _Informacion * -> -> -> 0 `i `ui `ux -> -> # *U &U _Informacion `ui `ux `uc -> *U + &U _Informacion * -> -> -> 1 `i `ui `ux -> -> # *U &U _Informacion `ui `ux `uc -> *U + &U _Informacion * -> -> -> 2 `i `ui `ux -> -> # *U &U _Informacion `ui `ux `uc -> *U + &U _Informacion * -> -> -> 3 `i `ui `ux -> -> # *U &U _Informacion `ui `ux `uc ]
+"71
+[; ;LIFPIC.c: 71:     DataEnviar[0] = (Dato >> 8);
+[e = *U + &U _DataEnviar * -> -> -> 0 `i `ui `ux -> -> # *U &U _DataEnviar `ui `ux -> >> _Dato -> 8 `i `uc ]
+"72
+[; ;LIFPIC.c: 72:     DataEnviar[1] = Dato & 0xFF;
+[e = *U + &U _DataEnviar * -> -> -> 1 `i `ui `ux -> -> # *U &U _DataEnviar `ui `ux -> & _Dato -> -> 255 `i `ui `uc ]
+"73
+[; ;LIFPIC.c: 73:     Estado = Enviar;
+[e = _Estado . `E938 0 ]
+"74
+[; ;LIFPIC.c: 74:    break;
+[e $U 103  ]
+"75
+[; ;LIFPIC.c: 75:    case Recibir:
+[e :U 106 ]
+"76
+[; ;LIFPIC.c: 76:     while(Valor != 1)
+[e $U 107  ]
+[e :U 108 ]
+"77
+[; ;LIFPIC.c: 77:     {
+{
+"78
+[; ;LIFPIC.c: 78:      for(int i=0;i<BufferLenght;i++)
+{
+[v _i `i ~T0 @X0 1 a ]
+[e = _i -> 0 `i ]
+[e $U 113  ]
+[e :U 110 ]
+"79
+[; ;LIFPIC.c: 79:      {
+{
+"80
+[; ;LIFPIC.c: 80:       Informacion[i] = SerialRead();
+[e = *U + &U _Informacion * -> -> _i `ui `ux -> -> # *U &U _Informacion `ui `ux ( _SerialRead ..  ]
+"81
+[; ;LIFPIC.c: 81:      }
+}
+[e ++ _i -> 1 `i ]
+[e :U 113 ]
+[e $ < _i -> _BufferLenght `i 110  ]
+[e :U 111 ]
+}
+"82
+[; ;LIFPIC.c: 82:                     dada = SerialRead();
+[e = _dada ( _SerialRead ..  ]
+"83
+[; ;LIFPIC.c: 83:                     if(dada == 'k')
+[e $ ! == -> _dada `ui -> 107 `ui 114  ]
+"84
+[; ;LIFPIC.c: 84:                     {
+{
+"85
+[; ;LIFPIC.c: 85:                         Valor = 1;
+[e = _Valor -> -> 1 `i `uc ]
+"86
+[; ;LIFPIC.c: 86:                     }
+}
+[e $U 115  ]
+"87
+[; ;LIFPIC.c: 87:                     else
+[e :U 114 ]
+"88
+[; ;LIFPIC.c: 88:                     {
+{
+"89
+[; ;LIFPIC.c: 89:                         Valor = 0;
+[e = _Valor -> -> 0 `i `uc ]
+"90
+[; ;LIFPIC.c: 90:                     }
+}
+[e :U 115 ]
+"91
+[; ;LIFPIC.c: 91:     }
+}
+[e :U 107 ]
+"76
+[; ;LIFPIC.c: 76:     while(Valor != 1)
+[e $ != -> _Valor `i -> 1 `i 108  ]
+[e :U 109 ]
+"92
+[; ;LIFPIC.c: 92:                 dada = 0;
+[e = _dada -> -> 0 `i `uc ]
+"93
+[; ;LIFPIC.c: 93:                 Valor = 0;
+[e = _Valor -> -> 0 `i `uc ]
+"94
+[; ;LIFPIC.c: 94:                 Estado = Decode;
+[e = _Estado . `E938 2 ]
+"95
+[; ;LIFPIC.c: 95:    break;
+[e $U 103  ]
+"96
+[; ;LIFPIC.c: 96:    case Enviar:
+[e :U 116 ]
+"97
+[; ;LIFPIC.c: 97:                 while(Valor != 1)
+[e $U 117  ]
+[e :U 118 ]
+"98
+[; ;LIFPIC.c: 98:                 {
+{
+"99
+[; ;LIFPIC.c: 99:                     for(int j=0;j<2;j++)
+{
+[v _j `i ~T0 @X0 1 a ]
+[e = _j -> 0 `i ]
+[e $ < _j -> 2 `i 120  ]
+[e $U 121  ]
+[e :U 120 ]
+"100
+[; ;LIFPIC.c: 100:                     {
+{
+"101
+[; ;LIFPIC.c: 101:                         SerialWrite(DataEnviar[j]);
+[e ( _SerialWrite (1 *U + &U _DataEnviar * -> -> _j `ui `ux -> -> # *U &U _DataEnviar `ui `ux ]
+"103
+[; ;LIFPIC.c: 103:                     }
+}
+[e ++ _j -> 1 `i ]
+[e $ < _j -> 2 `i 120  ]
+[e :U 121 ]
+}
+"104
+[; ;LIFPIC.c: 104:                     SerialWrite(';');
+[e ( _SerialWrite (1 -> -> 59 `ui `uc ]
+"105
+[; ;LIFPIC.c: 105:                     dada = SerialRead();
+[e = _dada ( _SerialRead ..  ]
+"106
+[; ;LIFPIC.c: 106:                     if(dada == 'k')
+[e $ ! == -> _dada `ui -> 107 `ui 123  ]
+"107
+[; ;LIFPIC.c: 107:                     {
+{
+"108
+[; ;LIFPIC.c: 108:                         Valor = 1;
+[e = _Valor -> -> 1 `i `uc ]
+"109
+[; ;LIFPIC.c: 109:                     }
+}
+[e $U 124  ]
+"110
+[; ;LIFPIC.c: 110:                     else
+[e :U 123 ]
+"111
+[; ;LIFPIC.c: 111:                     {
+{
+"112
+[; ;LIFPIC.c: 112:                         Valor = 0;
+[e = _Valor -> -> 0 `i `uc ]
+"113
+[; ;LIFPIC.c: 113:                     }
+}
+[e :U 124 ]
+"114
+[; ;LIFPIC.c: 114:                 }
+}
+[e :U 117 ]
+"97
+[; ;LIFPIC.c: 97:                 while(Valor != 1)
+[e $ != -> _Valor `i -> 1 `i 118  ]
+[e :U 119 ]
+"115
+[; ;LIFPIC.c: 115:                 Valor = 0;
+[e = _Valor -> -> 0 `i `uc ]
+"116
+[; ;LIFPIC.c: 116:                 dada = 0;
+[e = _dada -> -> 0 `i `uc ]
+"117
+[; ;LIFPIC.c: 117:     Estado = Recibir;
+[e = _Estado . `E938 1 ]
+"118
+[; ;LIFPIC.c: 118:    break;
+[e $U 103  ]
+"119
+[; ;LIFPIC.c: 119:   }
+}
+[e $U 103  ]
+[e :U 104 ]
+[e [\ -> _Estado `ui , $ -> . `E938 2 `ui 105
+ , $ -> . `E938 1 `ui 106
+ , $ -> . `E938 0 `ui 116
+ 103 ]
+[e :U 103 ]
+"120
+[; ;LIFPIC.c: 120:  }
+}
+[e :U 102 ]
+"121
+[; ;LIFPIC.c: 121: }
+[e :UE 101 ]
+}
+"123
+[; ;LIFPIC.c: 123: uint16_t ProcessCommand(uint8_t instruction, uint8_t port, uint8_t MSBData, uint8_t LSBData)
+[v _ProcessCommand `(ui ~T0 @X0 1 ef4`uc`uc`uc`uc ]
+"124
+[; ;LIFPIC.c: 124: {
+{
+[e :U _ProcessCommand ]
+"123
+[; ;LIFPIC.c: 123: uint16_t ProcessCommand(uint8_t instruction, uint8_t port, uint8_t MSBData, uint8_t LSBData)
+[v _instruction `uc ~T0 @X0 1 r1 ]
+[v _port `uc ~T0 @X0 1 r2 ]
+[v _MSBData `uc ~T0 @X0 1 r3 ]
+[v _LSBData `uc ~T0 @X0 1 r4 ]
+"124
+[; ;LIFPIC.c: 124: {
+[f ]
+"125
+[; ;LIFPIC.c: 125:     uint16_t data = 0;
+[v _data `ui ~T0 @X0 1 a ]
+[e = _data -> -> 0 `i `ui ]
+"126
+[; ;LIFPIC.c: 126:   switch(instruction)
+[e $U 127  ]
+"127
+[; ;LIFPIC.c: 127:   {
+{
+"128
+[; ;LIFPIC.c: 128:    case 0x05:
+[e :U 128 ]
+"129
+[; ;LIFPIC.c: 129:     if(port > 24)
+[e $ ! > -> _port `i -> 24 `i 129  ]
+"130
+[; ;LIFPIC.c: 130:     {
+{
+"131
+[; ;LIFPIC.c: 131:      port = 24;
+[e = _port -> -> 24 `i `uc ]
+"132
+[; ;LIFPIC.c: 132:     }
+}
+[e :U 129 ]
+"133
+[; ;LIFPIC.c: 133:     pinMode(port,LSBData);
+[e ( _pinMode (2 , -> _port `uc -> _LSBData `uc ]
+"134
+[; ;LIFPIC.c: 134:     return 1;
+[e ) -> -> 1 `i `ui ]
+[e $UE 125  ]
+"135
+[; ;LIFPIC.c: 135:    break;
+[e $U 126  ]
+"136
+[; ;LIFPIC.c: 136:    case 0x06:
+[e :U 130 ]
+"137
+[; ;LIFPIC.c: 137:     if(port > 24)
+[e $ ! > -> _port `i -> 24 `i 131  ]
+"138
+[; ;LIFPIC.c: 138:     {
+{
+"139
+[; ;LIFPIC.c: 139:      port = 24;
+[e = _port -> -> 24 `i `uc ]
+"140
+[; ;LIFPIC.c: 140:     }
+}
+[e :U 131 ]
+"141
+[; ;LIFPIC.c: 141:     digitalWrite(port,LSBData);
+[e ( _digitalWrite (2 , -> _port `uc -> _LSBData `uc ]
+"142
+[; ;LIFPIC.c: 142:     return LSBData;
+[e ) -> _LSBData `ui ]
+[e $UE 125  ]
+"143
+[; ;LIFPIC.c: 143:    break;
+[e $U 126  ]
+"144
+[; ;LIFPIC.c: 144:    case 0x07:
+[e :U 132 ]
+"145
+[; ;LIFPIC.c: 145:     if(port > 24)
+[e $ ! > -> _port `i -> 24 `i 133  ]
+"146
+[; ;LIFPIC.c: 146:     {
+{
+"147
+[; ;LIFPIC.c: 147:      port = 24;
+[e = _port -> -> 24 `i `uc ]
+"148
+[; ;LIFPIC.c: 148:     }
+}
+[e :U 133 ]
+"149
+[; ;LIFPIC.c: 149:     return digitalRead(port);
+[e ) -> ( _digitalRead (1 -> _port `uc `ui ]
+[e $UE 125  ]
+"150
+[; ;LIFPIC.c: 150:    break;
+[e $U 126  ]
+"151
+[; ;LIFPIC.c: 151:    case 0x08:
+[e :U 134 ]
+"152
+[; ;LIFPIC.c: 152:     return analogRead(port);
+[e ) ( _analogRead (1 -> _port `uc ]
+[e $UE 125  ]
+"153
+[; ;LIFPIC.c: 153:    break;
+[e $U 126  ]
+"154
+[; ;LIFPIC.c: 154:    case 0x09:
+[e :U 135 ]
+"164
+[; ;LIFPIC.c: 164:                 data = (MSBData << 8) + LSBData;
+[e = _data -> + << -> _MSBData `i -> 8 `i -> _LSBData `i `ui ]
+"165
+[; ;LIFPIC.c: 165:     analogWrite(port,data);
+[e ( _analogWrite (2 , -> _port `uc _data ]
+"166
+[; ;LIFPIC.c: 166:     return port;
+[e ) -> _port `ui ]
+[e $UE 125  ]
+"167
+[; ;LIFPIC.c: 167:    break;
+[e $U 126  ]
+"168
+[; ;LIFPIC.c: 168:             case 0x0A:
+[e :U 136 ]
+"169
+[; ;LIFPIC.c: 169:                 return PBRead(port);
+[e ) -> ( _PBRead (1 -> _port `uc `ui ]
+[e $UE 125  ]
+"170
+[; ;LIFPIC.c: 170:             break;
+[e $U 126  ]
+"171
+[; ;LIFPIC.c: 171:             case 0x0B:
+[e :U 137 ]
+"172
+[; ;LIFPIC.c: 172:                 if(port == 0x0B)
+[e $ ! == -> _port `i -> 11 `i 138  ]
+"173
+[; ;LIFPIC.c: 173:                 {
+{
+"174
+[; ;LIFPIC.c: 174:                     return PORTB;
+[e ) -> _PORTB `ui ]
+[e $UE 125  ]
+"175
+[; ;LIFPIC.c: 175:                 }
+}
+[e $U 139  ]
+"176
+[; ;LIFPIC.c: 176:                 else if(port == 0x0D)
+[e :U 138 ]
+[e $ ! == -> _port `i -> 13 `i 140  ]
+"177
+[; ;LIFPIC.c: 177:                 {
+{
+"178
+[; ;LIFPIC.c: 178:                     return PORTD;
+[e ) -> _PORTD `ui ]
+[e $UE 125  ]
+"179
+[; ;LIFPIC.c: 179:                 }
+}
+[e :U 140 ]
+[e :U 139 ]
+"180
+[; ;LIFPIC.c: 180:                 break;
+[e $U 126  ]
+"181
+[; ;LIFPIC.c: 181:             case 0x0C:
+[e :U 141 ]
+"182
+[; ;LIFPIC.c: 182:                 if(port == 0x0B)
+[e $ ! == -> _port `i -> 11 `i 142  ]
+"183
+[; ;LIFPIC.c: 183:                 {
+{
+"184
+[; ;LIFPIC.c: 184:                     PORTB = LSBData;
+[e = _PORTB _LSBData ]
+"185
+[; ;LIFPIC.c: 185:                 }
+}
+[e $U 143  ]
+"186
+[; ;LIFPIC.c: 186:                 else if(port == 0x0D)
+[e :U 142 ]
+[e $ ! == -> _port `i -> 13 `i 144  ]
+"187
+[; ;LIFPIC.c: 187:                 {
+{
+"188
+[; ;LIFPIC.c: 188:                     PORTD = LSBData;
+[e = _PORTD _LSBData ]
+"189
+[; ;LIFPIC.c: 189:                 }
+}
+[e :U 144 ]
+[e :U 143 ]
+"190
+[; ;LIFPIC.c: 190:                 break;
+[e $U 126  ]
+"191
+[; ;LIFPIC.c: 191:             case 0x0D:
+[e :U 145 ]
+"192
+[; ;LIFPIC.c: 192:                 data = USRead(Trigger,Echo);
+[e = _data ( _USRead (2 , -> _Trigger `uc -> _Echo `uc ]
+"193
+[; ;LIFPIC.c: 193:                 return data;
+[e ) _data ]
+[e $UE 125  ]
+"194
+[; ;LIFPIC.c: 194:                 break;
+[e $U 126  ]
+"195
+[; ;LIFPIC.c: 195:             case 0x15:
+[e :U 146 ]
+"196
+[; ;LIFPIC.c: 196:                 if(port == 0x0B)
+[e $ ! == -> _port `i -> 11 `i 147  ]
+"197
+[; ;LIFPIC.c: 197:                 {
+{
+"198
+[; ;LIFPIC.c: 198:                     TRISB = LSBData;
+[e = _TRISB _LSBData ]
+"199
+[; ;LIFPIC.c: 199:                 }
+}
+[e $U 148  ]
+"200
+[; ;LIFPIC.c: 200:                 else if(port == 0x0D)
+[e :U 147 ]
+[e $ ! == -> _port `i -> 13 `i 149  ]
+"201
+[; ;LIFPIC.c: 201:                 {
+{
+"202
+[; ;LIFPIC.c: 202:                     TRISD = LSBData;
+[e = _TRISD _LSBData ]
+"203
+[; ;LIFPIC.c: 203:                 }
+}
+[e :U 149 ]
+[e :U 148 ]
+"204
+[; ;LIFPIC.c: 204:                 return 0x15;
+[e ) -> -> 21 `i `ui ]
+[e $UE 125  ]
+"205
+[; ;LIFPIC.c: 205:                 break;
+[e $U 126  ]
+"206
+[; ;LIFPIC.c: 206:   }
+}
+[e $U 126  ]
+[e :U 127 ]
+[e [\ -> _instruction `i , $ -> 5 `i 128
+ , $ -> 6 `i 130
+ , $ -> 7 `i 132
+ , $ -> 8 `i 134
+ , $ -> 9 `i 135
+ , $ -> 10 `i 136
+ , $ -> 11 `i 137
+ , $ -> 12 `i 141
+ , $ -> 13 `i 145
+ , $ -> 21 `i 146
+ 126 ]
+[e :U 126 ]
+"207
+[; ;LIFPIC.c: 207: }
+[e :UE 125 ]
+}

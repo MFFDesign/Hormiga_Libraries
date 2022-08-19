@@ -1,0 +1,503 @@
+[p LITE_MODE AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F877A ]
+[d frameptr 6 ]
+"21 C:\Users\ToncheLAP\Desktop\Banda Transportadora\LIFPIC v2.4\Firmware\LIFPIC.X\LIFPIC.c
+[e E938 MaquinaEstados `uc
+Enviar 0
+Recibir 1
+Decode 2
+]
+"5 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\aldiv.c
+[v ___aldiv __aldiv `(l  1 e 4 0 ]
+"43 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\fltol.c
+[v ___fltol __fltol `(l  1 e 4 0 ]
+"10 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"8 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"10 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\xxtofl.c
+[v ___xxtofl __xxtofl `(d  1 e 4 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"3 C:\Users\ToncheLAP\Desktop\Banda Transportadora\LIFPIC v2.4\Firmware\LIFPIC.X\Hormiga877.c
+[v _main main `(i  1 e 2 0 ]
+"14
+[v _Initialization Initialization `(v  1 e 1 0 ]
+"44
+[v _PWMConfiguration PWMConfiguration `(v  1 e 1 0 ]
+"60
+[v _pinMode pinMode `(v  1 e 1 0 ]
+"166
+[v _digitalWrite digitalWrite `(v  1 e 1 0 ]
+"257
+[v _digitalRead digitalRead `(uc  1 e 1 0 ]
+"346
+[v _analogRead analogRead `(ui  1 e 2 0 ]
+"407
+[v _analogWrite analogWrite `(uc  1 e 1 0 ]
+"425
+[v _PBRead PBRead `(uc  1 e 1 0 ]
+"465
+[v _SerialBegin SerialBegin `(uc  1 e 1 0 ]
+"526
+[v _SerialWrite SerialWrite `(v  1 e 1 0 ]
+"556
+[v _SerialAvailable SerialAvailable `(uc  1 e 1 0 ]
+"561
+[v _SerialRead SerialRead `(uc  1 e 1 0 ]
+"576
+[v _delay delay `(v  1 e 1 0 ]
+"36 C:\Users\ToncheLAP\Desktop\Banda Transportadora\LIFPIC v2.4\Firmware\LIFPIC.X\LIFPIC.c
+[v _setup setup `(v  1 e 1 0 ]
+"61
+[v _loop loop `(v  1 e 1 0 ]
+"123
+[v _ProcessCommand ProcessCommand `(ui  1 e 2 0 ]
+"5 C:\Users\ToncheLAP\Desktop\Banda Transportadora\LIFPIC v2.4\Firmware\LIFPIC.X\Ultrasonico.c
+[v _USBegin USBegin `(v  1 e 1 0 ]
+"15
+[v _USRead USRead `(ui  1 e 2 0 ]
+[s S314 . 1 `uc 1 RA0 1 0 :1:0 
+`uc 1 RA1 1 0 :1:1 
+`uc 1 RA2 1 0 :1:2 
+`uc 1 RA3 1 0 :1:3 
+`uc 1 RA4 1 0 :1:4 
+`uc 1 RA5 1 0 :1:5 
+]
+"181 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h
+[u S321 . 1 `S314 1 . 1 0 ]
+[v _PORTAbits PORTAbits `VES321  1 e 1 @5 ]
+"216
+[v _PORTB PORTB `VEuc  1 e 1 @6 ]
+[s S272 . 1 `uc 1 RB0 1 0 :1:0 
+`uc 1 RB1 1 0 :1:1 
+`uc 1 RB2 1 0 :1:2 
+`uc 1 RB3 1 0 :1:3 
+`uc 1 RB4 1 0 :1:4 
+`uc 1 RB5 1 0 :1:5 
+`uc 1 RB6 1 0 :1:6 
+`uc 1 RB7 1 0 :1:7 
+]
+"233
+[u S281 . 1 `S272 1 . 1 0 ]
+[v _PORTBbits PORTBbits `VES281  1 e 1 @6 ]
+"278
+[v _PORTC PORTC `VEuc  1 e 1 @7 ]
+[s S251 . 1 `uc 1 RC0 1 0 :1:0 
+`uc 1 RC1 1 0 :1:1 
+`uc 1 RC2 1 0 :1:2 
+`uc 1 RC3 1 0 :1:3 
+`uc 1 RC4 1 0 :1:4 
+`uc 1 RC5 1 0 :1:5 
+`uc 1 RC6 1 0 :1:6 
+`uc 1 RC7 1 0 :1:7 
+]
+"295
+[u S260 . 1 `S251 1 . 1 0 ]
+[v _PORTCbits PORTCbits `VES260  1 e 1 @7 ]
+"340
+[v _PORTD PORTD `VEuc  1 e 1 @8 ]
+[s S293 . 1 `uc 1 RD0 1 0 :1:0 
+`uc 1 RD1 1 0 :1:1 
+`uc 1 RD2 1 0 :1:2 
+`uc 1 RD3 1 0 :1:3 
+`uc 1 RD4 1 0 :1:4 
+`uc 1 RD5 1 0 :1:5 
+`uc 1 RD6 1 0 :1:6 
+`uc 1 RD7 1 0 :1:7 
+]
+"357
+[u S302 . 1 `S293 1 . 1 0 ]
+[v _PORTDbits PORTDbits `VES302  1 e 1 @8 ]
+"402
+[v _PORTE PORTE `VEuc  1 e 1 @9 ]
+[s S383 . 1 `uc 1 RE0 1 0 :1:0 
+`uc 1 RE1 1 0 :1:1 
+`uc 1 RE2 1 0 :1:2 
+]
+"414
+[u S387 . 1 `S383 1 . 1 0 ]
+[v _PORTEbits PORTEbits `VES387  1 e 1 @9 ]
+"641
+[v _TMR1L TMR1L `VEuc  1 e 1 @14 ]
+"648
+[v _TMR1H TMR1H `VEuc  1 e 1 @15 ]
+"655
+[v _T1CON T1CON `VEuc  1 e 1 @16 ]
+"737
+[v _T2CON T2CON `VEuc  1 e 1 @18 ]
+"892
+[v _CCPR1L CCPR1L `VEuc  1 e 1 @21 ]
+"906
+[v _CCP1CON CCP1CON `VEuc  1 e 1 @23 ]
+"1059
+[v _TXREG TXREG `VEuc  1 e 1 @25 ]
+"1066
+[v _RCREG RCREG `VEuc  1 e 1 @26 ]
+"1080
+[v _CCPR2L CCPR2L `VEuc  1 e 1 @27 ]
+"1094
+[v _CCP2CON CCP2CON `VEuc  1 e 1 @29 ]
+"1152
+[v _ADRESH ADRESH `VEuc  1 e 1 @30 ]
+"1159
+[v _ADCON0 ADCON0 `VEuc  1 e 1 @31 ]
+[s S331 . 1 `uc 1 ADON 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 GO_nDONE 1 0 :1:2 
+`uc 1 CHS 1 0 :3:3 
+`uc 1 ADCS 1 0 :2:6 
+]
+"1190
+[s S337 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 GO 1 0 :1:2 
+`uc 1 CHS0 1 0 :1:3 
+`uc 1 CHS1 1 0 :1:4 
+`uc 1 CHS2 1 0 :1:5 
+`uc 1 ADCS0 1 0 :1:6 
+`uc 1 ADCS1 1 0 :1:7 
+]
+[s S345 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nDONE 1 0 :1:2 
+]
+[s S348 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 GO_DONE 1 0 :1:2 
+]
+[u S351 . 1 `S331 1 . 1 0 `S337 1 . 1 0 `S345 1 . 1 0 `S348 1 . 1 0 ]
+[v _ADCON0bits ADCON0bits `VES351  1 e 1 @31 ]
+[s S234 . 1 `uc 1 TRISA0 1 0 :1:0 
+`uc 1 TRISA1 1 0 :1:1 
+`uc 1 TRISA2 1 0 :1:2 
+`uc 1 TRISA3 1 0 :1:3 
+`uc 1 TRISA4 1 0 :1:4 
+`uc 1 TRISA5 1 0 :1:5 
+]
+"1340
+[u S241 . 1 `S234 1 . 1 0 ]
+[v _TRISAbits TRISAbits `VES241  1 e 1 @133 ]
+"1375
+[v _TRISB TRISB `VEuc  1 e 1 @134 ]
+[s S192 . 1 `uc 1 TRISB0 1 0 :1:0 
+`uc 1 TRISB1 1 0 :1:1 
+`uc 1 TRISB2 1 0 :1:2 
+`uc 1 TRISB3 1 0 :1:3 
+`uc 1 TRISB4 1 0 :1:4 
+`uc 1 TRISB5 1 0 :1:5 
+`uc 1 TRISB6 1 0 :1:6 
+`uc 1 TRISB7 1 0 :1:7 
+]
+"1392
+[u S201 . 1 `S192 1 . 1 0 ]
+[v _TRISBbits TRISBbits `VES201  1 e 1 @134 ]
+"1437
+[v _TRISC TRISC `VEuc  1 e 1 @135 ]
+[s S171 . 1 `uc 1 TRISC0 1 0 :1:0 
+`uc 1 TRISC1 1 0 :1:1 
+`uc 1 TRISC2 1 0 :1:2 
+`uc 1 TRISC3 1 0 :1:3 
+`uc 1 TRISC4 1 0 :1:4 
+`uc 1 TRISC5 1 0 :1:5 
+`uc 1 TRISC6 1 0 :1:6 
+`uc 1 TRISC7 1 0 :1:7 
+]
+"1454
+[u S180 . 1 `S171 1 . 1 0 ]
+[v _TRISCbits TRISCbits `VES180  1 e 1 @135 ]
+"1499
+[v _TRISD TRISD `VEuc  1 e 1 @136 ]
+[s S213 . 1 `uc 1 TRISD0 1 0 :1:0 
+`uc 1 TRISD1 1 0 :1:1 
+`uc 1 TRISD2 1 0 :1:2 
+`uc 1 TRISD3 1 0 :1:3 
+`uc 1 TRISD4 1 0 :1:4 
+`uc 1 TRISD5 1 0 :1:5 
+`uc 1 TRISD6 1 0 :1:6 
+`uc 1 TRISD7 1 0 :1:7 
+]
+"1516
+[u S222 . 1 `S213 1 . 1 0 ]
+[v _TRISDbits TRISDbits `VES222  1 e 1 @136 ]
+"1561
+[v _TRISE TRISE `VEuc  1 e 1 @137 ]
+"1816
+[v _PR2 PR2 `VEuc  1 e 1 @146 ]
+"2080
+[v _SPBRG SPBRG `VEuc  1 e 1 @153 ]
+"2222
+[v _ADRESL ADRESL `VEuc  1 e 1 @158 ]
+"2229
+[v _ADCON1 ADCON1 `VEuc  1 e 1 @159 ]
+"2416
+[v _BRGH BRGH `VEb  1 e 0 @1218 ]
+"2452
+[v _CCP1X CCP1X `VEb  1 e 0 @189 ]
+"2455
+[v _CCP1Y CCP1Y `VEb  1 e 0 @188 ]
+"2476
+[v _CCP2X CCP2X `VEb  1 e 0 @237 ]
+"2479
+[v _CCP2Y CCP2Y `VEb  1 e 0 @236 ]
+"2515
+[v _CREN CREN `VEb  1 e 0 @196 ]
+"2563
+[v _FERR FERR `VEb  1 e 0 @194 ]
+"2614
+[v _OERR OERR `VEb  1 e 0 @193 ]
+"2743
+[v _RCIF RCIF `VEb  1 e 0 @101 ]
+"2812
+[v _SPEN SPEN `VEb  1 e 0 @199 ]
+"2842
+[v _SYNC SYNC `VEb  1 e 0 @1220 ]
+"2893
+[v _TMR1ON TMR1ON `VEb  1 e 0 @128 ]
+"2977
+[v _TRISC6 TRISC6 `VEb  1 e 0 @1086 ]
+"2980
+[v _TRISC7 TRISC7 `VEb  1 e 0 @1087 ]
+"3016
+[v _TRMT TRMT `VEb  1 e 0 @1217 ]
+"3031
+[v _TXEN TXEN `VEb  1 e 0 @1221 ]
+"3037
+[v _TXIF TXIF `VEb  1 e 0 @100 ]
+"21 C:\Users\ToncheLAP\Desktop\Banda Transportadora\LIFPIC v2.4\Firmware\LIFPIC.X\LIFPIC.c
+[v _Estado Estado `E938  1 e 1 0 ]
+"23
+[v _BufferLenght BufferLenght `uc  1 e 1 0 ]
+"24
+[v _Informacion Informacion `[4]uc  1 e 4 0 ]
+"25
+[v _DataEnviar DataEnviar `[2]uc  1 e 2 0 ]
+"26
+[v _LED LED `uc  1 e 1 0 ]
+"28
+[v _Dato Dato `ui  1 e 2 0 ]
+"31
+[v _Trigger Trigger `uc  1 e 1 0 ]
+"32
+[v _Echo Echo `uc  1 e 1 0 ]
+"34
+[v _Valor Valor `uc  1 e 1 0 ]
+"35
+[v _dada dada `uc  1 e 1 0 ]
+"3 C:\Users\ToncheLAP\Desktop\Banda Transportadora\LIFPIC v2.4\Firmware\LIFPIC.X\Hormiga877.c
+[v _main main `(i  1 e 2 0 ]
+{
+"12
+} 0
+"36 C:\Users\ToncheLAP\Desktop\Banda Transportadora\LIFPIC v2.4\Firmware\LIFPIC.X\LIFPIC.c
+[v _setup setup `(v  1 e 1 0 ]
+{
+"59
+} 0
+"5 C:\Users\ToncheLAP\Desktop\Banda Transportadora\LIFPIC v2.4\Firmware\LIFPIC.X\Ultrasonico.c
+[v _USBegin USBegin `(v  1 e 1 0 ]
+{
+[v USBegin@trigger trigger `uc  1 a 1 wreg ]
+[v USBegin@trigger trigger `uc  1 a 1 wreg ]
+[v USBegin@echo echo `uc  1 p 1 4 ]
+"7
+[v USBegin@trigger trigger `uc  1 a 1 5 ]
+"13
+} 0
+"465 C:\Users\ToncheLAP\Desktop\Banda Transportadora\LIFPIC v2.4\Firmware\LIFPIC.X\Hormiga877.c
+[v _SerialBegin SerialBegin `(uc  1 e 1 0 ]
+{
+"470
+[v SerialBegin@x x `ui  1 a 2 10 ]
+"465
+[v SerialBegin@BaudRate BaudRate `DCl  1 p 4 6 ]
+"501
+} 0
+"5 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\aldiv.c
+[v ___aldiv __aldiv `(l  1 e 4 0 ]
+{
+"10
+[v ___aldiv@quotient quotient `l  1 a 4 2 ]
+"11
+[v ___aldiv@sign sign `uc  1 a 1 1 ]
+[v ___aldiv@counter counter `uc  1 a 1 0 ]
+"5
+[v ___aldiv@divisor divisor `l  1 p 4 0 ]
+[v ___aldiv@dividend dividend `l  1 p 4 4 ]
+"41
+} 0
+"61 C:\Users\ToncheLAP\Desktop\Banda Transportadora\LIFPIC v2.4\Firmware\LIFPIC.X\LIFPIC.c
+[v _loop loop `(v  1 e 1 0 ]
+{
+"99
+[v loop@j j `i  1 a 2 57 ]
+"78
+[v loop@i i `i  1 a 2 55 ]
+"121
+} 0
+"526 C:\Users\ToncheLAP\Desktop\Banda Transportadora\LIFPIC v2.4\Firmware\LIFPIC.X\Hormiga877.c
+[v _SerialWrite SerialWrite `(v  1 e 1 0 ]
+{
+[v SerialWrite@dataWrite dataWrite `uc  1 a 1 wreg ]
+[v SerialWrite@dataWrite dataWrite `uc  1 a 1 wreg ]
+[v SerialWrite@dataWrite dataWrite `uc  1 a 1 0 ]
+"530
+} 0
+"561
+[v _SerialRead SerialRead `(uc  1 e 1 0 ]
+{
+"565
+} 0
+"556
+[v _SerialAvailable SerialAvailable `(uc  1 e 1 0 ]
+{
+"559
+} 0
+"123 C:\Users\ToncheLAP\Desktop\Banda Transportadora\LIFPIC v2.4\Firmware\LIFPIC.X\LIFPIC.c
+[v _ProcessCommand ProcessCommand `(ui  1 e 2 0 ]
+{
+[v ProcessCommand@instruction instruction `uc  1 a 1 wreg ]
+"125
+[v ProcessCommand@data data `ui  1 a 2 50 ]
+"123
+[v ProcessCommand@instruction instruction `uc  1 a 1 wreg ]
+[v ProcessCommand@port port `uc  1 p 1 44 ]
+[v ProcessCommand@MSBData MSBData `uc  1 p 1 45 ]
+[v ProcessCommand@LSBData LSBData `uc  1 p 1 46 ]
+"125
+[v ProcessCommand@instruction instruction `uc  1 a 1 49 ]
+"207
+} 0
+"60 C:\Users\ToncheLAP\Desktop\Banda Transportadora\LIFPIC v2.4\Firmware\LIFPIC.X\Hormiga877.c
+[v _pinMode pinMode `(v  1 e 1 0 ]
+{
+[v pinMode@pin pin `uc  1 a 1 wreg ]
+[v pinMode@pin pin `uc  1 a 1 wreg ]
+[v pinMode@mode mode `uc  1 p 1 0 ]
+[v pinMode@pin pin `uc  1 a 1 3 ]
+"165
+} 0
+"407
+[v _analogWrite analogWrite `(uc  1 e 1 0 ]
+{
+[v analogWrite@pin pin `uc  1 a 1 wreg ]
+[v analogWrite@pin pin `uc  1 a 1 wreg ]
+[v analogWrite@value value `ui  1 p 2 0 ]
+[v analogWrite@pin pin `uc  1 a 1 4 ]
+"423
+} 0
+"346
+[v _analogRead analogRead `(ui  1 e 2 0 ]
+{
+[v analogRead@channel channel `uc  1 a 1 wreg ]
+[v analogRead@channel channel `uc  1 a 1 wreg ]
+[v analogRead@channel channel `uc  1 a 1 4 ]
+"406
+} 0
+"15 C:\Users\ToncheLAP\Desktop\Banda Transportadora\LIFPIC v2.4\Firmware\LIFPIC.X\Ultrasonico.c
+[v _USRead USRead `(ui  1 e 2 0 ]
+{
+[v USRead@trigger trigger `uc  1 a 1 wreg ]
+"17
+[v USRead@buffer buffer `ui  1 a 2 41 ]
+"15
+[v USRead@trigger trigger `uc  1 a 1 wreg ]
+[v USRead@echo echo `uc  1 p 1 37 ]
+"17
+[v USRead@trigger trigger `uc  1 a 1 43 ]
+"30
+} 0
+"166 C:\Users\ToncheLAP\Desktop\Banda Transportadora\LIFPIC v2.4\Firmware\LIFPIC.X\Hormiga877.c
+[v _digitalWrite digitalWrite `(v  1 e 1 0 ]
+{
+[v digitalWrite@pin pin `uc  1 a 1 wreg ]
+[v digitalWrite@pin pin `uc  1 a 1 wreg ]
+[v digitalWrite@value value `uc  1 p 1 0 ]
+[v digitalWrite@pin pin `uc  1 a 1 3 ]
+"256
+} 0
+"257
+[v _digitalRead digitalRead `(uc  1 e 1 0 ]
+{
+[v digitalRead@pin pin `uc  1 a 1 wreg ]
+[v digitalRead@pin pin `uc  1 a 1 wreg ]
+[v digitalRead@pin pin `uc  1 a 1 2 ]
+"345
+} 0
+"10 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\xxtofl.c
+[v ___xxtofl __xxtofl `(d  1 e 4 0 ]
+{
+[v ___xxtofl@sign sign `uc  1 a 1 wreg ]
+"13
+[v ___xxtofl@arg arg `ul  1 a 4 10 ]
+"12
+[v ___xxtofl@exp exp `uc  1 a 1 9 ]
+"10
+[v ___xxtofl@sign sign `uc  1 a 1 wreg ]
+[v ___xxtofl@val val `l  1 p 4 0 ]
+"15
+[v ___xxtofl@sign sign `uc  1 a 1 8 ]
+"44
+} 0
+"43 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\fltol.c
+[v ___fltol __fltol `(l  1 e 4 0 ]
+{
+"45
+[v ___fltol@exp1 exp1 `uc  1 a 1 36 ]
+[v ___fltol@sign1 sign1 `uc  1 a 1 35 ]
+"43
+[v ___fltol@f1 f1 `d  1 p 4 26 ]
+"70
+} 0
+"8 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+{
+"21
+[v ___fldiv@grs grs `ul  1 a 4 20 ]
+"22
+[v ___fldiv@rem rem `ul  1 a 4 13 ]
+"20
+[v ___fldiv@new_exp new_exp `i  1 a 2 18 ]
+"19
+[v ___fldiv@aexp aexp `uc  1 a 1 25 ]
+"18
+[v ___fldiv@bexp bexp `uc  1 a 1 24 ]
+"16
+[v ___fldiv@sign sign `uc  1 a 1 17 ]
+"8
+[v ___fldiv@a a `d  1 p 4 0 ]
+[v ___fldiv@b b `d  1 p 4 4 ]
+"185
+} 0
+"425 C:\Users\ToncheLAP\Desktop\Banda Transportadora\LIFPIC v2.4\Firmware\LIFPIC.X\Hormiga877.c
+[v _PBRead PBRead `(uc  1 e 1 0 ]
+{
+[v PBRead@pin pin `uc  1 a 1 wreg ]
+[v PBRead@pin pin `uc  1 a 1 wreg ]
+[v PBRead@pin pin `uc  1 a 1 9 ]
+"463
+} 0
+"576
+[v _delay delay `(v  1 e 1 0 ]
+{
+"581
+[v delay@i i `i  1 a 2 5 ]
+"578
+[v delay@j j `i  1 a 2 3 ]
+"576
+[v delay@milis milis `DCi  1 p 2 0 ]
+"586
+} 0
+"14
+[v _Initialization Initialization `(v  1 e 1 0 ]
+{
+"42
+} 0
+"44
+[v _PWMConfiguration PWMConfiguration `(v  1 e 1 0 ]
+{
+"52
+} 0

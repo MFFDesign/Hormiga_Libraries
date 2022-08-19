@@ -1,0 +1,2426 @@
+Version 4.0 HI-TECH Software Intermediate Code
+[p mainexit ]
+"32 ./Hormiga877.h
+[; ;./Hormiga877.h: 32: 
+[v _Initialization `(v ~T0 @X0 0 ef ]
+"41
+[v _setup `(v ~T0 @X0 0 ef ]
+"42
+[v _loop `(v ~T0 @X0 0 ef ]
+"1159 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 1159: extern volatile unsigned char ADCON0 __attribute__((address(0x01F)));
+[v _ADCON0 `Vuc ~T0 @X0 0 e@31 ]
+"2229
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 2229: extern volatile unsigned char ADCON1 __attribute__((address(0x09F)));
+[v _ADCON1 `Vuc ~T0 @X0 0 e@159 ]
+"216
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 216: extern volatile unsigned char PORTB __attribute__((address(0x006)));
+[v _PORTB `Vuc ~T0 @X0 0 e@6 ]
+"1375
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 1375: extern volatile unsigned char TRISB __attribute__((address(0x086)));
+[v _TRISB `Vuc ~T0 @X0 0 e@134 ]
+"278
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 278: extern volatile unsigned char PORTC __attribute__((address(0x007)));
+[v _PORTC `Vuc ~T0 @X0 0 e@7 ]
+"1437
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 1437: extern volatile unsigned char TRISC __attribute__((address(0x087)));
+[v _TRISC `Vuc ~T0 @X0 0 e@135 ]
+"33 ./Hormiga877.h
+[; ;./Hormiga877.h: 33: 
+[v _PWMConfiguration `(v ~T0 @X0 0 ef ]
+"402 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 402: extern volatile unsigned char PORTE __attribute__((address(0x009)));
+[v _PORTE `Vuc ~T0 @X0 0 e@9 ]
+"1561
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 1561: extern volatile unsigned char TRISE __attribute__((address(0x089)));
+[v _TRISE `Vuc ~T0 @X0 0 e@137 ]
+"1816
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 1816: extern volatile unsigned char PR2 __attribute__((address(0x092)));
+[v _PR2 `Vuc ~T0 @X0 0 e@146 ]
+"737
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 737: extern volatile unsigned char T2CON __attribute__((address(0x012)));
+[v _T2CON `Vuc ~T0 @X0 0 e@18 ]
+"1080
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 1080: extern volatile unsigned char CCPR2L __attribute__((address(0x01B)));
+[v _CCPR2L `Vuc ~T0 @X0 0 e@27 ]
+"892
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 892: extern volatile unsigned char CCPR1L __attribute__((address(0x015)));
+[v _CCPR1L `Vuc ~T0 @X0 0 e@21 ]
+"906
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 906: extern volatile unsigned char CCP1CON __attribute__((address(0x017)));
+[v _CCP1CON `Vuc ~T0 @X0 0 e@23 ]
+"1094
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 1094: extern volatile unsigned char CCP2CON __attribute__((address(0x01D)));
+[v _CCP2CON `Vuc ~T0 @X0 0 e@29 ]
+"1443
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 1443:     struct {
+[s S58 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S58 . TRISC0 TRISC1 TRISC2 TRISC3 TRISC4 TRISC5 TRISC6 TRISC7 ]
+"1442
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 1442: typedef union {
+[u S57 `S58 1 ]
+[n S57 . . ]
+"1454
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 1454: extern volatile TRISCbits_t TRISCbits __attribute__((address(0x087)));
+[v _TRISCbits `VS57 ~T0 @X0 0 e@135 ]
+"1381
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 1381:     struct {
+[s S56 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S56 . TRISB0 TRISB1 TRISB2 TRISB3 TRISB4 TRISB5 TRISB6 TRISB7 ]
+"1380
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 1380: typedef union {
+[u S55 `S56 1 ]
+[n S55 . . ]
+"1392
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 1392: extern volatile TRISBbits_t TRISBbits __attribute__((address(0x086)));
+[v _TRISBbits `VS55 ~T0 @X0 0 e@134 ]
+"1505
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 1505:     struct {
+[s S60 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S60 . TRISD0 TRISD1 TRISD2 TRISD3 TRISD4 TRISD5 TRISD6 TRISD7 ]
+"1504
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 1504: typedef union {
+[u S59 `S60 1 ]
+[n S59 . . ]
+"1516
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 1516: extern volatile TRISDbits_t TRISDbits __attribute__((address(0x088)));
+[v _TRISDbits `VS59 ~T0 @X0 0 e@136 ]
+"1331
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 1331:     struct {
+[s S54 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S54 . TRISA0 TRISA1 TRISA2 TRISA3 TRISA4 TRISA5 ]
+"1330
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 1330: typedef union {
+[u S53 `S54 1 ]
+[n S53 . . ]
+"1340
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 1340: extern volatile TRISAbits_t TRISAbits __attribute__((address(0x085)));
+[v _TRISAbits `VS53 ~T0 @X0 0 e@133 ]
+"284
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 284:     struct {
+[s S10 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S10 . RC0 RC1 RC2 RC3 RC4 RC5 RC6 RC7 ]
+"283
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 283: typedef union {
+[u S9 `S10 1 ]
+[n S9 . . ]
+"295
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 295: extern volatile PORTCbits_t PORTCbits __attribute__((address(0x007)));
+[v _PORTCbits `VS9 ~T0 @X0 0 e@7 ]
+"222
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 222:     struct {
+[s S8 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S8 . RB0 RB1 RB2 RB3 RB4 RB5 RB6 RB7 ]
+"221
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 221: typedef union {
+[u S7 `S8 1 ]
+[n S7 . . ]
+"233
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 233: extern volatile PORTBbits_t PORTBbits __attribute__((address(0x006)));
+[v _PORTBbits `VS7 ~T0 @X0 0 e@6 ]
+"346
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 346:     struct {
+[s S12 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S12 . RD0 RD1 RD2 RD3 RD4 RD5 RD6 RD7 ]
+"345
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 345: typedef union {
+[u S11 `S12 1 ]
+[n S11 . . ]
+"357
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 357: extern volatile PORTDbits_t PORTDbits __attribute__((address(0x008)));
+[v _PORTDbits `VS11 ~T0 @X0 0 e@8 ]
+"172
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 172:     struct {
+[s S6 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S6 . RA0 RA1 RA2 RA3 RA4 RA5 ]
+"171
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 171: typedef union {
+[u S5 `S6 1 ]
+[n S5 . . ]
+"181
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 181: extern volatile PORTAbits_t PORTAbits __attribute__((address(0x005)));
+[v _PORTAbits `VS5 ~T0 @X0 0 e@5 ]
+"1165
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 1165:     struct {
+[s S46 :1 `uc 1 :1 `uc 1 :1 `uc 1 :3 `uc 1 :2 `uc 1 ]
+[n S46 . ADON . GO_nDONE CHS ADCS ]
+"1172
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 1172:     struct {
+[s S47 :2 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S47 . . GO CHS0 CHS1 CHS2 ADCS0 ADCS1 ]
+"1181
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 1181:     struct {
+[s S48 :2 `uc 1 :1 `uc 1 ]
+[n S48 . . nDONE ]
+"1185
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 1185:     struct {
+[s S49 :2 `uc 1 :1 `uc 1 ]
+[n S49 . . GO_DONE ]
+"1164
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 1164: typedef union {
+[u S45 `S46 1 `S47 1 `S48 1 `S49 1 ]
+[n S45 . . . . . ]
+"1190
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 1190: extern volatile ADCON0bits_t ADCON0bits __attribute__((address(0x01F)));
+[v _ADCON0bits `VS45 ~T0 @X0 0 e@31 ]
+"1152
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 1152: extern volatile unsigned char ADRESH __attribute__((address(0x01E)));
+[v _ADRESH `Vuc ~T0 @X0 0 e@30 ]
+"2222
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 2222: extern volatile unsigned char ADRESL __attribute__((address(0x09E)));
+[v _ADRESL `Vuc ~T0 @X0 0 e@158 ]
+"2476
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 2476: extern volatile __bit CCP2X __attribute__((address(0xED)));
+[v _CCP2X `Vb ~T0 @X0 0 e@237 ]
+"2479
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 2479: extern volatile __bit CCP2Y __attribute__((address(0xEC)));
+[v _CCP2Y `Vb ~T0 @X0 0 e@236 ]
+"2452
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 2452: extern volatile __bit CCP1X __attribute__((address(0xBD)));
+[v _CCP1X `Vb ~T0 @X0 0 e@189 ]
+"2455
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 2455: extern volatile __bit CCP1Y __attribute__((address(0xBC)));
+[v _CCP1Y `Vb ~T0 @X0 0 e@188 ]
+"408
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 408:     struct {
+[s S14 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S14 . RE0 RE1 RE2 ]
+"407
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 407: typedef union {
+[u S13 `S14 1 ]
+[n S13 . . ]
+"414
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 414: extern volatile PORTEbits_t PORTEbits __attribute__((address(0x009)));
+[v _PORTEbits `VS13 ~T0 @X0 0 e@9 ]
+"59 ./Hormiga877.h
+[v _delay `(v ~T0 @X0 0 ef1`Ci ]
+"2416 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 2416: extern volatile __bit BRGH __attribute__((address(0x4C2)));
+[v _BRGH `Vb ~T0 @X0 0 e@1218 ]
+"2080
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 2080: extern volatile unsigned char SPBRG __attribute__((address(0x099)));
+[v _SPBRG `Vuc ~T0 @X0 0 e@153 ]
+"2842
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 2842: extern volatile __bit SYNC __attribute__((address(0x4C4)));
+[v _SYNC `Vb ~T0 @X0 0 e@1220 ]
+"2812
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 2812: extern volatile __bit SPEN __attribute__((address(0xC7)));
+[v _SPEN `Vb ~T0 @X0 0 e@199 ]
+"2980
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 2980: extern volatile __bit TRISC7 __attribute__((address(0x43F)));
+[v _TRISC7 `Vb ~T0 @X0 0 e@1087 ]
+"2977
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 2977: extern volatile __bit TRISC6 __attribute__((address(0x43E)));
+[v _TRISC6 `Vb ~T0 @X0 0 e@1086 ]
+"2515
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 2515: extern volatile __bit CREN __attribute__((address(0xC4)));
+[v _CREN `Vb ~T0 @X0 0 e@196 ]
+"3031
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 3031: extern volatile __bit TXEN __attribute__((address(0x4C5)));
+[v _TXEN `Vb ~T0 @X0 0 e@1221 ]
+"1059
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 1059: extern volatile unsigned char TXREG __attribute__((address(0x019)));
+[v _TXREG `Vuc ~T0 @X0 0 e@25 ]
+"1066
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 1066: extern volatile unsigned char RCREG __attribute__((address(0x01A)));
+[v _RCREG `Vuc ~T0 @X0 0 e@26 ]
+"3016
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 3016: extern volatile __bit TRMT __attribute__((address(0x4C1)));
+[v _TRMT `Vb ~T0 @X0 0 e@1217 ]
+"2563
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 2563: extern volatile __bit FERR __attribute__((address(0xC2)));
+[v _FERR `Vb ~T0 @X0 0 e@194 ]
+"2614
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 2614: extern volatile __bit OERR __attribute__((address(0xC1)));
+[v _OERR `Vb ~T0 @X0 0 e@193 ]
+"3037
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 3037: extern volatile __bit TXIF __attribute__((address(0x64)));
+[v _TXIF `Vb ~T0 @X0 0 e@100 ]
+"2743
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 2743: extern volatile __bit RCIF __attribute__((address(0x65)));
+[v _RCIF `Vb ~T0 @X0 0 e@101 ]
+"54 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 54: __asm("INDF equ 00h");
+[; <" INDF equ 00h ;# ">
+"61
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 61: __asm("TMR0 equ 01h");
+[; <" TMR0 equ 01h ;# ">
+"68
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 68: __asm("PCL equ 02h");
+[; <" PCL equ 02h ;# ">
+"75
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 75: __asm("STATUS equ 03h");
+[; <" STATUS equ 03h ;# ">
+"161
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 161: __asm("FSR equ 04h");
+[; <" FSR equ 04h ;# ">
+"168
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 168: __asm("PORTA equ 05h");
+[; <" PORTA equ 05h ;# ">
+"218
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 218: __asm("PORTB equ 06h");
+[; <" PORTB equ 06h ;# ">
+"280
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 280: __asm("PORTC equ 07h");
+[; <" PORTC equ 07h ;# ">
+"342
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 342: __asm("PORTD equ 08h");
+[; <" PORTD equ 08h ;# ">
+"404
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 404: __asm("PORTE equ 09h");
+[; <" PORTE equ 09h ;# ">
+"436
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 436: __asm("PCLATH equ 0Ah");
+[; <" PCLATH equ 0Ah ;# ">
+"456
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 456: __asm("INTCON equ 0Bh");
+[; <" INTCON equ 0Bh ;# ">
+"534
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 534: __asm("PIR1 equ 0Ch");
+[; <" PIR1 equ 0Ch ;# ">
+"596
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 596: __asm("PIR2 equ 0Dh");
+[; <" PIR2 equ 0Dh ;# ">
+"636
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 636: __asm("TMR1 equ 0Eh");
+[; <" TMR1 equ 0Eh ;# ">
+"643
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 643: __asm("TMR1L equ 0Eh");
+[; <" TMR1L equ 0Eh ;# ">
+"650
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 650: __asm("TMR1H equ 0Fh");
+[; <" TMR1H equ 0Fh ;# ">
+"657
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 657: __asm("T1CON equ 010h");
+[; <" T1CON equ 010h ;# ">
+"732
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 732: __asm("TMR2 equ 011h");
+[; <" TMR2 equ 011h ;# ">
+"739
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 739: __asm("T2CON equ 012h");
+[; <" T2CON equ 012h ;# ">
+"810
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 810: __asm("SSPBUF equ 013h");
+[; <" SSPBUF equ 013h ;# ">
+"817
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 817: __asm("SSPCON equ 014h");
+[; <" SSPCON equ 014h ;# ">
+"887
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 887: __asm("CCPR1 equ 015h");
+[; <" CCPR1 equ 015h ;# ">
+"894
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 894: __asm("CCPR1L equ 015h");
+[; <" CCPR1L equ 015h ;# ">
+"901
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 901: __asm("CCPR1H equ 016h");
+[; <" CCPR1H equ 016h ;# ">
+"908
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 908: __asm("CCP1CON equ 017h");
+[; <" CCP1CON equ 017h ;# ">
+"966
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 966: __asm("RCSTA equ 018h");
+[; <" RCSTA equ 018h ;# ">
+"1061
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 1061: __asm("TXREG equ 019h");
+[; <" TXREG equ 019h ;# ">
+"1068
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 1068: __asm("RCREG equ 01Ah");
+[; <" RCREG equ 01Ah ;# ">
+"1075
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 1075: __asm("CCPR2 equ 01Bh");
+[; <" CCPR2 equ 01Bh ;# ">
+"1082
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 1082: __asm("CCPR2L equ 01Bh");
+[; <" CCPR2L equ 01Bh ;# ">
+"1089
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 1089: __asm("CCPR2H equ 01Ch");
+[; <" CCPR2H equ 01Ch ;# ">
+"1096
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 1096: __asm("CCP2CON equ 01Dh");
+[; <" CCP2CON equ 01Dh ;# ">
+"1154
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 1154: __asm("ADRESH equ 01Eh");
+[; <" ADRESH equ 01Eh ;# ">
+"1161
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 1161: __asm("ADCON0 equ 01Fh");
+[; <" ADCON0 equ 01Fh ;# ">
+"1257
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 1257: __asm("OPTION_REG equ 081h");
+[; <" OPTION_REG equ 081h ;# ">
+"1327
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 1327: __asm("TRISA equ 085h");
+[; <" TRISA equ 085h ;# ">
+"1377
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 1377: __asm("TRISB equ 086h");
+[; <" TRISB equ 086h ;# ">
+"1439
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 1439: __asm("TRISC equ 087h");
+[; <" TRISC equ 087h ;# ">
+"1501
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 1501: __asm("TRISD equ 088h");
+[; <" TRISD equ 088h ;# ">
+"1563
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 1563: __asm("TRISE equ 089h");
+[; <" TRISE equ 089h ;# ">
+"1620
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 1620: __asm("PIE1 equ 08Ch");
+[; <" PIE1 equ 08Ch ;# ">
+"1682
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 1682: __asm("PIE2 equ 08Dh");
+[; <" PIE2 equ 08Dh ;# ">
+"1722
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 1722: __asm("PCON equ 08Eh");
+[; <" PCON equ 08Eh ;# ">
+"1756
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 1756: __asm("SSPCON2 equ 091h");
+[; <" SSPCON2 equ 091h ;# ">
+"1818
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 1818: __asm("PR2 equ 092h");
+[; <" PR2 equ 092h ;# ">
+"1825
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 1825: __asm("SSPADD equ 093h");
+[; <" SSPADD equ 093h ;# ">
+"1832
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 1832: __asm("SSPSTAT equ 094h");
+[; <" SSPSTAT equ 094h ;# ">
+"2001
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 2001: __asm("TXSTA equ 098h");
+[; <" TXSTA equ 098h ;# ">
+"2082
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 2082: __asm("SPBRG equ 099h");
+[; <" SPBRG equ 099h ;# ">
+"2089
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 2089: __asm("CMCON equ 09Ch");
+[; <" CMCON equ 09Ch ;# ">
+"2159
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 2159: __asm("CVRCON equ 09Dh");
+[; <" CVRCON equ 09Dh ;# ">
+"2224
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 2224: __asm("ADRESL equ 09Eh");
+[; <" ADRESL equ 09Eh ;# ">
+"2231
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 2231: __asm("ADCON1 equ 09Fh");
+[; <" ADCON1 equ 09Fh ;# ">
+"2290
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 2290: __asm("EEDATA equ 010Ch");
+[; <" EEDATA equ 010Ch ;# ">
+"2297
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 2297: __asm("EEADR equ 010Dh");
+[; <" EEADR equ 010Dh ;# ">
+"2304
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 2304: __asm("EEDATH equ 010Eh");
+[; <" EEDATH equ 010Eh ;# ">
+"2311
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 2311: __asm("EEADRH equ 010Fh");
+[; <" EEADRH equ 010Fh ;# ">
+"2318
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 2318: __asm("EECON1 equ 018Ch");
+[; <" EECON1 equ 018Ch ;# ">
+"2363
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h: 2363: __asm("EECON2 equ 018Dh");
+[; <" EECON2 equ 018Dh ;# ">
+"14 ./Hormiga877.h
+[; ;./Hormiga877.h: 14: void digitalWrite(char pin, char value);
+[p x FOSC = HS ]
+"15
+[; ;./Hormiga877.h: 15: char digitalRead(char pin);
+[p x WDTE = OFF ]
+"16
+[; ;./Hormiga877.h: 16: unsigned int analogRead(char channel);
+[p x PWRTE = OFF ]
+"17
+[; ;./Hormiga877.h: 17: uint8_t analogWrite(char pin, unsigned int value);
+[p x BOREN = OFF ]
+"18
+[; ;./Hormiga877.h: 18: void setup(void);
+[p x LVP = ON ]
+"19
+[; ;./Hormiga877.h: 19: void loop(void);
+[p x CPD = OFF ]
+"20
+[; ;./Hormiga877.h: 20: 
+[p x WRT = OFF ]
+"21
+[; ;./Hormiga877.h: 21: 
+[p x CP = OFF ]
+[v $root$_main `(v ~T0 @X0 0 e ]
+"3 Hormiga877.c
+[; ;Hormiga877.c: 3: int main(void)
+[v _main `(i ~T0 @X0 1 ef ]
+"4
+[; ;Hormiga877.c: 4: {
+{
+[e :U _main ]
+[f ]
+"5
+[; ;Hormiga877.c: 5:     Initialization();
+[e ( _Initialization ..  ]
+"6
+[; ;Hormiga877.c: 6:     setup();
+[e ( _setup ..  ]
+"7
+[; ;Hormiga877.c: 7:     for(;;)
+{
+[e :U 96 ]
+"8
+[; ;Hormiga877.c: 8:     {
+{
+"9
+[; ;Hormiga877.c: 9:         loop();
+[e ( _loop ..  ]
+"10
+[; ;Hormiga877.c: 10:     }
+}
+[e $U 96  ]
+[e :U 97 ]
+}
+"11
+[; ;Hormiga877.c: 11:     return 0;
+[e ) -> 0 `i ]
+[e $UE 95  ]
+"12
+[; ;Hormiga877.c: 12: }
+[e :UE 95 ]
+}
+"14
+[; ;Hormiga877.c: 14: void Initialization(void)
+[v _Initialization `(v ~T0 @X0 1 ef ]
+"15
+[; ;Hormiga877.c: 15: {
+{
+[e :U _Initialization ]
+[f ]
+"17
+[; ;Hormiga877.c: 17:     ADCON0 = 0x81;
+[e = _ADCON0 -> -> 129 `i `uc ]
+"18
+[; ;Hormiga877.c: 18:     ADCON1 = 0xC2;
+[e = _ADCON1 -> -> 194 `i `uc ]
+"20
+[; ;Hormiga877.c: 20:     __asm("CLRF PORTA");
+[; <" CLRF PORTA ;# ">
+"21
+[; ;Hormiga877.c: 21:     __asm("MOVLW 0x3F");
+[; <" MOVLW 0x3F ;# ">
+"22
+[; ;Hormiga877.c: 22:     __asm("MOVWF TRISA");
+[; <" MOVWF TRISA ;# ">
+"23
+[; ;Hormiga877.c: 23:     PORTB = 0x00;
+[e = _PORTB -> -> 0 `i `uc ]
+"24
+[; ;Hormiga877.c: 24:     TRISB &= 0x00;
+[e =& _TRISB -> -> 0 `i `Vuc ]
+"25
+[; ;Hormiga877.c: 25:     PORTB = 0x00;
+[e = _PORTB -> -> 0 `i `uc ]
+"27
+[; ;Hormiga877.c: 27:     PORTC = 0x00;
+[e = _PORTC -> -> 0 `i `uc ]
+"28
+[; ;Hormiga877.c: 28:     TRISC = 0x00;
+[e = _TRISC -> -> 0 `i `uc ]
+"29
+[; ;Hormiga877.c: 29:     PORTC = 0x00;
+[e = _PORTC -> -> 0 `i `uc ]
+"34
+[; ;Hormiga877.c: 34:     PWMConfiguration();
+[e ( _PWMConfiguration ..  ]
+"36
+[; ;Hormiga877.c: 36:     __asm("CLRF PORTD");
+[; <" CLRF PORTD ;# ">
+"37
+[; ;Hormiga877.c: 37:     __asm("MOVLW 0x00");
+[; <" MOVLW 0x00 ;# ">
+"38
+[; ;Hormiga877.c: 38:     __asm("MOVF TRISD");
+[; <" MOVF TRISD ;# ">
+"39
+[; ;Hormiga877.c: 39:     __asm("CLRF PORTD");
+[; <" CLRF PORTD ;# ">
+"40
+[; ;Hormiga877.c: 40:     PORTE = 0x00;
+[e = _PORTE -> -> 0 `i `uc ]
+"41
+[; ;Hormiga877.c: 41:     TRISE = 0x07;
+[e = _TRISE -> -> 7 `i `uc ]
+"42
+[; ;Hormiga877.c: 42: }
+[e :UE 99 ]
+}
+"44
+[; ;Hormiga877.c: 44: void PWMConfiguration(void)
+[v _PWMConfiguration `(v ~T0 @X0 1 ef ]
+"45
+[; ;Hormiga877.c: 45: {
+{
+[e :U _PWMConfiguration ]
+[f ]
+"46
+[; ;Hormiga877.c: 46:     PR2 = 0xFF;
+[e = _PR2 -> -> 255 `i `uc ]
+"47
+[; ;Hormiga877.c: 47:     T2CON = 0x05;
+[e = _T2CON -> -> 5 `i `uc ]
+"48
+[; ;Hormiga877.c: 48:     CCPR2L = 0x00;
+[e = _CCPR2L -> -> 0 `i `uc ]
+"49
+[; ;Hormiga877.c: 49:     CCPR1L = 0x00;
+[e = _CCPR1L -> -> 0 `i `uc ]
+"50
+[; ;Hormiga877.c: 50:     CCP1CON = 0x0C;
+[e = _CCP1CON -> -> 12 `i `uc ]
+"51
+[; ;Hormiga877.c: 51:     CCP2CON = 0x0C;
+[e = _CCP2CON -> -> 12 `i `uc ]
+"52
+[; ;Hormiga877.c: 52: }
+[e :UE 100 ]
+}
+"54
+[; ;Hormiga877.c: 54: void PWMStop(void)
+[v _PWMStop `(v ~T0 @X0 1 ef ]
+"55
+[; ;Hormiga877.c: 55: {
+{
+[e :U _PWMStop ]
+[f ]
+"56
+[; ;Hormiga877.c: 56:     CCP2CON = 0x00;
+[e = _CCP2CON -> -> 0 `i `uc ]
+"57
+[; ;Hormiga877.c: 57:     CCP1CON = 0x00;
+[e = _CCP1CON -> -> 0 `i `uc ]
+"58
+[; ;Hormiga877.c: 58: }
+[e :UE 101 ]
+}
+"60
+[; ;Hormiga877.c: 60: void pinMode(char pin, char mode)
+[v _pinMode `(v ~T0 @X0 1 ef2`uc`uc ]
+"61
+[; ;Hormiga877.c: 61: {
+{
+[e :U _pinMode ]
+"60
+[; ;Hormiga877.c: 60: void pinMode(char pin, char mode)
+[v _pin `uc ~T0 @X0 1 r1 ]
+[v _mode `uc ~T0 @X0 1 r2 ]
+"61
+[; ;Hormiga877.c: 61: {
+[f ]
+"62
+[; ;Hormiga877.c: 62:     switch(pin)
+[e $U 104  ]
+"63
+[; ;Hormiga877.c: 63:     {
+{
+"64
+[; ;Hormiga877.c: 64:         case 0:
+[e :U 105 ]
+"65
+[; ;Hormiga877.c: 65:             TRISCbits.TRISC7 = mode;
+[e = . . _TRISCbits 0 7 -> _mode `uc ]
+"66
+[; ;Hormiga877.c: 66:             break;
+[e $U 103  ]
+"67
+[; ;Hormiga877.c: 67:         case 1:
+[e :U 106 ]
+"68
+[; ;Hormiga877.c: 68:             TRISCbits.TRISC6 = mode;
+[e = . . _TRISCbits 0 6 -> _mode `uc ]
+"69
+[; ;Hormiga877.c: 69:             break;
+[e $U 103  ]
+"70
+[; ;Hormiga877.c: 70:         case 2:
+[e :U 107 ]
+"71
+[; ;Hormiga877.c: 71:             TRISCbits.TRISC5 = mode;
+[e = . . _TRISCbits 0 5 -> _mode `uc ]
+"72
+[; ;Hormiga877.c: 72:             break;
+[e $U 103  ]
+"73
+[; ;Hormiga877.c: 73:         case 3:
+[e :U 108 ]
+"74
+[; ;Hormiga877.c: 74:             TRISCbits.TRISC4 = mode;
+[e = . . _TRISCbits 0 4 -> _mode `uc ]
+"75
+[; ;Hormiga877.c: 75:             break;
+[e $U 103  ]
+"76
+[; ;Hormiga877.c: 76:         case 4:
+[e :U 109 ]
+"77
+[; ;Hormiga877.c: 77:             TRISCbits.TRISC3 = mode;
+[e = . . _TRISCbits 0 3 -> _mode `uc ]
+"78
+[; ;Hormiga877.c: 78:             break;
+[e $U 103  ]
+"79
+[; ;Hormiga877.c: 79:         case 5:
+[e :U 110 ]
+"80
+[; ;Hormiga877.c: 80:             TRISCbits.TRISC2 = mode;
+[e = . . _TRISCbits 0 2 -> _mode `uc ]
+"82
+[; ;Hormiga877.c: 82:             break;
+[e $U 103  ]
+"83
+[; ;Hormiga877.c: 83:         case 6:
+[e :U 111 ]
+"84
+[; ;Hormiga877.c: 84:             TRISCbits.TRISC1 = mode;
+[e = . . _TRISCbits 0 1 -> _mode `uc ]
+"86
+[; ;Hormiga877.c: 86:             break;
+[e $U 103  ]
+"87
+[; ;Hormiga877.c: 87:         case 7:
+[e :U 112 ]
+"88
+[; ;Hormiga877.c: 88:             TRISCbits.TRISC0 = mode;
+[e = . . _TRISCbits 0 0 -> _mode `uc ]
+"89
+[; ;Hormiga877.c: 89:             break;
+[e $U 103  ]
+"90
+[; ;Hormiga877.c: 90:         case 8:
+[e :U 113 ]
+"91
+[; ;Hormiga877.c: 91:             TRISBbits.TRISB0 = mode;
+[e = . . _TRISBbits 0 0 -> _mode `uc ]
+"92
+[; ;Hormiga877.c: 92:             break;
+[e $U 103  ]
+"93
+[; ;Hormiga877.c: 93:         case 9:
+[e :U 114 ]
+"94
+[; ;Hormiga877.c: 94:             TRISBbits.TRISB1 = mode;
+[e = . . _TRISBbits 0 1 -> _mode `uc ]
+"95
+[; ;Hormiga877.c: 95:             break;
+[e $U 103  ]
+"96
+[; ;Hormiga877.c: 96:         case 10:
+[e :U 115 ]
+"97
+[; ;Hormiga877.c: 97:             TRISBbits.TRISB2 = mode;
+[e = . . _TRISBbits 0 2 -> _mode `uc ]
+"98
+[; ;Hormiga877.c: 98:             break;
+[e $U 103  ]
+"99
+[; ;Hormiga877.c: 99:         case 11:
+[e :U 116 ]
+"100
+[; ;Hormiga877.c: 100:             TRISBbits.TRISB3 = mode;
+[e = . . _TRISBbits 0 3 -> _mode `uc ]
+"101
+[; ;Hormiga877.c: 101:             break;
+[e $U 103  ]
+"102
+[; ;Hormiga877.c: 102:         case 12:
+[e :U 117 ]
+"103
+[; ;Hormiga877.c: 103:             TRISBbits.TRISB4 = mode;
+[e = . . _TRISBbits 0 4 -> _mode `uc ]
+"104
+[; ;Hormiga877.c: 104:             break;
+[e $U 103  ]
+"105
+[; ;Hormiga877.c: 105:         case 13:
+[e :U 118 ]
+"106
+[; ;Hormiga877.c: 106:             TRISBbits.TRISB5 = mode;
+[e = . . _TRISBbits 0 5 -> _mode `uc ]
+"107
+[; ;Hormiga877.c: 107:             break;
+[e $U 103  ]
+"108
+[; ;Hormiga877.c: 108:         case 14:
+[e :U 119 ]
+"109
+[; ;Hormiga877.c: 109:             TRISBbits.TRISB6 = mode;
+[e = . . _TRISBbits 0 6 -> _mode `uc ]
+"110
+[; ;Hormiga877.c: 110:             break;
+[e $U 103  ]
+"111
+[; ;Hormiga877.c: 111:         case 15:
+[e :U 120 ]
+"112
+[; ;Hormiga877.c: 112:             TRISBbits.TRISB7 = mode;
+[e = . . _TRISBbits 0 7 -> _mode `uc ]
+"113
+[; ;Hormiga877.c: 113:             break;
+[e $U 103  ]
+"114
+[; ;Hormiga877.c: 114:         case 16:
+[e :U 121 ]
+"115
+[; ;Hormiga877.c: 115:             TRISDbits.TRISD0 = mode;
+[e = . . _TRISDbits 0 0 -> _mode `uc ]
+"116
+[; ;Hormiga877.c: 116:             break;
+[e $U 103  ]
+"117
+[; ;Hormiga877.c: 117:         case 17:
+[e :U 122 ]
+"118
+[; ;Hormiga877.c: 118:             TRISDbits.TRISD1 = mode;
+[e = . . _TRISDbits 0 1 -> _mode `uc ]
+"119
+[; ;Hormiga877.c: 119:             break;
+[e $U 103  ]
+"120
+[; ;Hormiga877.c: 120:         case 18:
+[e :U 123 ]
+"121
+[; ;Hormiga877.c: 121:             TRISDbits.TRISD2 = mode;
+[e = . . _TRISDbits 0 2 -> _mode `uc ]
+"122
+[; ;Hormiga877.c: 122:             break;
+[e $U 103  ]
+"123
+[; ;Hormiga877.c: 123:         case 19:
+[e :U 124 ]
+"124
+[; ;Hormiga877.c: 124:             TRISDbits.TRISD3 = mode;
+[e = . . _TRISDbits 0 3 -> _mode `uc ]
+"125
+[; ;Hormiga877.c: 125:             break;
+[e $U 103  ]
+"126
+[; ;Hormiga877.c: 126:         case 20:
+[e :U 125 ]
+"127
+[; ;Hormiga877.c: 127:    TRISDbits.TRISD4 = mode;
+[e = . . _TRISDbits 0 4 -> _mode `uc ]
+"137
+[; ;Hormiga877.c: 137:    break;
+[e $U 103  ]
+"138
+[; ;Hormiga877.c: 138:         case 21:
+[e :U 126 ]
+"139
+[; ;Hormiga877.c: 139:             TRISDbits.TRISD5 = mode;
+[e = . . _TRISDbits 0 5 -> _mode `uc ]
+"140
+[; ;Hormiga877.c: 140:             break;
+[e $U 103  ]
+"141
+[; ;Hormiga877.c: 141:         case 22:
+[e :U 127 ]
+"142
+[; ;Hormiga877.c: 142:             TRISDbits.TRISD6 = mode;
+[e = . . _TRISDbits 0 6 -> _mode `uc ]
+"143
+[; ;Hormiga877.c: 143:             break;
+[e $U 103  ]
+"144
+[; ;Hormiga877.c: 144:         case 23:
+[e :U 128 ]
+"145
+[; ;Hormiga877.c: 145:             TRISDbits.TRISD7 = mode;
+[e = . . _TRISDbits 0 7 -> _mode `uc ]
+"146
+[; ;Hormiga877.c: 146:             break;
+[e $U 103  ]
+"147
+[; ;Hormiga877.c: 147:         case 24:
+[e :U 129 ]
+"148
+[; ;Hormiga877.c: 148:             TRISAbits.TRISA4 = mode;
+[e = . . _TRISAbits 0 4 -> _mode `uc ]
+"149
+[; ;Hormiga877.c: 149:             break;
+[e $U 103  ]
+"164
+[; ;Hormiga877.c: 164:     }
+}
+[e $U 103  ]
+[e :U 104 ]
+[e [\ -> _pin `i , $ -> 0 `i 105
+ , $ -> 1 `i 106
+ , $ -> 2 `i 107
+ , $ -> 3 `i 108
+ , $ -> 4 `i 109
+ , $ -> 5 `i 110
+ , $ -> 6 `i 111
+ , $ -> 7 `i 112
+ , $ -> 8 `i 113
+ , $ -> 9 `i 114
+ , $ -> 10 `i 115
+ , $ -> 11 `i 116
+ , $ -> 12 `i 117
+ , $ -> 13 `i 118
+ , $ -> 14 `i 119
+ , $ -> 15 `i 120
+ , $ -> 16 `i 121
+ , $ -> 17 `i 122
+ , $ -> 18 `i 123
+ , $ -> 19 `i 124
+ , $ -> 20 `i 125
+ , $ -> 21 `i 126
+ , $ -> 22 `i 127
+ , $ -> 23 `i 128
+ , $ -> 24 `i 129
+ 103 ]
+[e :U 103 ]
+"165
+[; ;Hormiga877.c: 165: }
+[e :UE 102 ]
+}
+"166
+[; ;Hormiga877.c: 166: void digitalWrite(char pin, char value)
+[v _digitalWrite `(v ~T0 @X0 1 ef2`uc`uc ]
+"167
+[; ;Hormiga877.c: 167: {
+{
+[e :U _digitalWrite ]
+"166
+[; ;Hormiga877.c: 166: void digitalWrite(char pin, char value)
+[v _pin `uc ~T0 @X0 1 r1 ]
+[v _value `uc ~T0 @X0 1 r2 ]
+"167
+[; ;Hormiga877.c: 167: {
+[f ]
+"168
+[; ;Hormiga877.c: 168:     switch(pin)
+[e $U 132  ]
+"169
+[; ;Hormiga877.c: 169:     {
+{
+"170
+[; ;Hormiga877.c: 170:         case 0:
+[e :U 133 ]
+"171
+[; ;Hormiga877.c: 171:             PORTCbits.RC7 = value;
+[e = . . _PORTCbits 0 7 -> _value `uc ]
+"172
+[; ;Hormiga877.c: 172:             break;
+[e $U 131  ]
+"173
+[; ;Hormiga877.c: 173:         case 1:
+[e :U 134 ]
+"174
+[; ;Hormiga877.c: 174:             PORTCbits.RC6 = value;
+[e = . . _PORTCbits 0 6 -> _value `uc ]
+"175
+[; ;Hormiga877.c: 175:             break;
+[e $U 131  ]
+"176
+[; ;Hormiga877.c: 176:         case 2:
+[e :U 135 ]
+"177
+[; ;Hormiga877.c: 177:             PORTCbits.RC5 = value;
+[e = . . _PORTCbits 0 5 -> _value `uc ]
+"178
+[; ;Hormiga877.c: 178:             break;
+[e $U 131  ]
+"179
+[; ;Hormiga877.c: 179:         case 3:
+[e :U 136 ]
+"180
+[; ;Hormiga877.c: 180:             PORTCbits.RC4 = value;
+[e = . . _PORTCbits 0 4 -> _value `uc ]
+"181
+[; ;Hormiga877.c: 181:             break;
+[e $U 131  ]
+"182
+[; ;Hormiga877.c: 182:         case 4:
+[e :U 137 ]
+"183
+[; ;Hormiga877.c: 183:             PORTCbits.RC3 = value;
+[e = . . _PORTCbits 0 3 -> _value `uc ]
+"184
+[; ;Hormiga877.c: 184:             break;
+[e $U 131  ]
+"185
+[; ;Hormiga877.c: 185:         case 5:
+[e :U 138 ]
+"186
+[; ;Hormiga877.c: 186:             CCP1CON = 0x00;
+[e = _CCP1CON -> -> 0 `i `uc ]
+"187
+[; ;Hormiga877.c: 187:             PORTCbits.RC2 = value;
+[e = . . _PORTCbits 0 2 -> _value `uc ]
+"188
+[; ;Hormiga877.c: 188:             break;
+[e $U 131  ]
+"189
+[; ;Hormiga877.c: 189:         case 6:
+[e :U 139 ]
+"190
+[; ;Hormiga877.c: 190:             CCP2CON = 0x00;
+[e = _CCP2CON -> -> 0 `i `uc ]
+"191
+[; ;Hormiga877.c: 191:             PORTCbits.RC1 = value;
+[e = . . _PORTCbits 0 1 -> _value `uc ]
+"192
+[; ;Hormiga877.c: 192:             break;
+[e $U 131  ]
+"193
+[; ;Hormiga877.c: 193:         case 7:
+[e :U 140 ]
+"194
+[; ;Hormiga877.c: 194:             PORTCbits.RC0 = value;
+[e = . . _PORTCbits 0 0 -> _value `uc ]
+"195
+[; ;Hormiga877.c: 195:             break;
+[e $U 131  ]
+"196
+[; ;Hormiga877.c: 196:         case 8:
+[e :U 141 ]
+"197
+[; ;Hormiga877.c: 197:             PORTBbits.RB0 = value;
+[e = . . _PORTBbits 0 0 -> _value `uc ]
+"198
+[; ;Hormiga877.c: 198:             break;
+[e $U 131  ]
+"199
+[; ;Hormiga877.c: 199:         case 9:
+[e :U 142 ]
+"200
+[; ;Hormiga877.c: 200:             PORTBbits.RB1 = value;
+[e = . . _PORTBbits 0 1 -> _value `uc ]
+"201
+[; ;Hormiga877.c: 201:             break;
+[e $U 131  ]
+"202
+[; ;Hormiga877.c: 202:         case 10:
+[e :U 143 ]
+"203
+[; ;Hormiga877.c: 203:             PORTBbits.RB2 = value;
+[e = . . _PORTBbits 0 2 -> _value `uc ]
+"204
+[; ;Hormiga877.c: 204:             break;
+[e $U 131  ]
+"205
+[; ;Hormiga877.c: 205:         case 11:
+[e :U 144 ]
+"206
+[; ;Hormiga877.c: 206:             PORTBbits.RB3 = value;
+[e = . . _PORTBbits 0 3 -> _value `uc ]
+"207
+[; ;Hormiga877.c: 207:             break;
+[e $U 131  ]
+"208
+[; ;Hormiga877.c: 208:         case 12:
+[e :U 145 ]
+"209
+[; ;Hormiga877.c: 209:             PORTBbits.RB4 = value;
+[e = . . _PORTBbits 0 4 -> _value `uc ]
+"210
+[; ;Hormiga877.c: 210:             break;
+[e $U 131  ]
+"211
+[; ;Hormiga877.c: 211:         case 13:
+[e :U 146 ]
+"212
+[; ;Hormiga877.c: 212:             PORTBbits.RB5 = value;
+[e = . . _PORTBbits 0 5 -> _value `uc ]
+"213
+[; ;Hormiga877.c: 213:             break;
+[e $U 131  ]
+"214
+[; ;Hormiga877.c: 214:         case 14:
+[e :U 147 ]
+"215
+[; ;Hormiga877.c: 215:             PORTBbits.RB6 = value;
+[e = . . _PORTBbits 0 6 -> _value `uc ]
+"216
+[; ;Hormiga877.c: 216:             break;
+[e $U 131  ]
+"217
+[; ;Hormiga877.c: 217:         case 15:
+[e :U 148 ]
+"218
+[; ;Hormiga877.c: 218:             PORTBbits.RB7 = value;
+[e = . . _PORTBbits 0 7 -> _value `uc ]
+"219
+[; ;Hormiga877.c: 219:             break;
+[e $U 131  ]
+"220
+[; ;Hormiga877.c: 220:         case 16:
+[e :U 149 ]
+"221
+[; ;Hormiga877.c: 221:             PORTDbits.RD0 = value;
+[e = . . _PORTDbits 0 0 -> _value `uc ]
+"222
+[; ;Hormiga877.c: 222:             break;
+[e $U 131  ]
+"223
+[; ;Hormiga877.c: 223:         case 17:
+[e :U 150 ]
+"224
+[; ;Hormiga877.c: 224:             PORTDbits.RD1 = value;
+[e = . . _PORTDbits 0 1 -> _value `uc ]
+"225
+[; ;Hormiga877.c: 225:             break;
+[e $U 131  ]
+"226
+[; ;Hormiga877.c: 226:         case 18:
+[e :U 151 ]
+"227
+[; ;Hormiga877.c: 227:             PORTDbits.RD2 = value;
+[e = . . _PORTDbits 0 2 -> _value `uc ]
+"228
+[; ;Hormiga877.c: 228:             break;
+[e $U 131  ]
+"229
+[; ;Hormiga877.c: 229:         case 19:
+[e :U 152 ]
+"230
+[; ;Hormiga877.c: 230:             PORTDbits.RD3 = value;
+[e = . . _PORTDbits 0 3 -> _value `uc ]
+"231
+[; ;Hormiga877.c: 231:             break;
+[e $U 131  ]
+"232
+[; ;Hormiga877.c: 232:         case 20:
+[e :U 153 ]
+"233
+[; ;Hormiga877.c: 233:             PORTDbits.RD4 = value;
+[e = . . _PORTDbits 0 4 -> _value `uc ]
+"234
+[; ;Hormiga877.c: 234:             break;
+[e $U 131  ]
+"235
+[; ;Hormiga877.c: 235:         case 21:
+[e :U 154 ]
+"236
+[; ;Hormiga877.c: 236:             PORTDbits.RD5 = value;
+[e = . . _PORTDbits 0 5 -> _value `uc ]
+"237
+[; ;Hormiga877.c: 237:             break;
+[e $U 131  ]
+"238
+[; ;Hormiga877.c: 238:         case 22:
+[e :U 155 ]
+"239
+[; ;Hormiga877.c: 239:             PORTDbits.RD6 = value;
+[e = . . _PORTDbits 0 6 -> _value `uc ]
+"240
+[; ;Hormiga877.c: 240:             break;
+[e $U 131  ]
+"241
+[; ;Hormiga877.c: 241:         case 23:
+[e :U 156 ]
+"242
+[; ;Hormiga877.c: 242:             PORTDbits.RD7 = value;
+[e = . . _PORTDbits 0 7 -> _value `uc ]
+"243
+[; ;Hormiga877.c: 243:             break;
+[e $U 131  ]
+"244
+[; ;Hormiga877.c: 244:         case 24:
+[e :U 157 ]
+"245
+[; ;Hormiga877.c: 245:             PORTAbits.RA4 = value;
+[e = . . _PORTAbits 0 4 -> _value `uc ]
+"246
+[; ;Hormiga877.c: 246:             break;
+[e $U 131  ]
+"255
+[; ;Hormiga877.c: 255:     }
+}
+[e $U 131  ]
+[e :U 132 ]
+[e [\ -> _pin `i , $ -> 0 `i 133
+ , $ -> 1 `i 134
+ , $ -> 2 `i 135
+ , $ -> 3 `i 136
+ , $ -> 4 `i 137
+ , $ -> 5 `i 138
+ , $ -> 6 `i 139
+ , $ -> 7 `i 140
+ , $ -> 8 `i 141
+ , $ -> 9 `i 142
+ , $ -> 10 `i 143
+ , $ -> 11 `i 144
+ , $ -> 12 `i 145
+ , $ -> 13 `i 146
+ , $ -> 14 `i 147
+ , $ -> 15 `i 148
+ , $ -> 16 `i 149
+ , $ -> 17 `i 150
+ , $ -> 18 `i 151
+ , $ -> 19 `i 152
+ , $ -> 20 `i 153
+ , $ -> 21 `i 154
+ , $ -> 22 `i 155
+ , $ -> 23 `i 156
+ , $ -> 24 `i 157
+ 131 ]
+[e :U 131 ]
+"256
+[; ;Hormiga877.c: 256: }
+[e :UE 130 ]
+}
+"257
+[; ;Hormiga877.c: 257: char digitalRead(char pin)
+[v _digitalRead `(uc ~T0 @X0 1 ef1`uc ]
+"258
+[; ;Hormiga877.c: 258: {
+{
+[e :U _digitalRead ]
+"257
+[; ;Hormiga877.c: 257: char digitalRead(char pin)
+[v _pin `uc ~T0 @X0 1 r1 ]
+"258
+[; ;Hormiga877.c: 258: {
+[f ]
+"259
+[; ;Hormiga877.c: 259:     switch(pin)
+[e $U 160  ]
+"260
+[; ;Hormiga877.c: 260:     {
+{
+"261
+[; ;Hormiga877.c: 261:         case 0:
+[e :U 161 ]
+"262
+[; ;Hormiga877.c: 262:              return PORTCbits.RC7;
+[e ) -> . . _PORTCbits 0 7 `uc ]
+[e $UE 158  ]
+"263
+[; ;Hormiga877.c: 263:             break;
+[e $U 159  ]
+"264
+[; ;Hormiga877.c: 264:         case 1:
+[e :U 162 ]
+"265
+[; ;Hormiga877.c: 265:             return PORTCbits.RC6;
+[e ) -> . . _PORTCbits 0 6 `uc ]
+[e $UE 158  ]
+"266
+[; ;Hormiga877.c: 266:             break;
+[e $U 159  ]
+"267
+[; ;Hormiga877.c: 267:         case 2:
+[e :U 163 ]
+"268
+[; ;Hormiga877.c: 268:             return PORTCbits.RC5;
+[e ) -> . . _PORTCbits 0 5 `uc ]
+[e $UE 158  ]
+"269
+[; ;Hormiga877.c: 269:             break;
+[e $U 159  ]
+"270
+[; ;Hormiga877.c: 270:         case 3:
+[e :U 164 ]
+"271
+[; ;Hormiga877.c: 271:             return PORTCbits.RC4;
+[e ) -> . . _PORTCbits 0 4 `uc ]
+[e $UE 158  ]
+"272
+[; ;Hormiga877.c: 272:             break;
+[e $U 159  ]
+"273
+[; ;Hormiga877.c: 273:         case 4:
+[e :U 165 ]
+"274
+[; ;Hormiga877.c: 274:             return PORTCbits.RC3;
+[e ) -> . . _PORTCbits 0 3 `uc ]
+[e $UE 158  ]
+"275
+[; ;Hormiga877.c: 275:             break;
+[e $U 159  ]
+"276
+[; ;Hormiga877.c: 276:         case 5:
+[e :U 166 ]
+"277
+[; ;Hormiga877.c: 277:             return PORTCbits.RC2;
+[e ) -> . . _PORTCbits 0 2 `uc ]
+[e $UE 158  ]
+"278
+[; ;Hormiga877.c: 278:             break;
+[e $U 159  ]
+"279
+[; ;Hormiga877.c: 279:         case 6:
+[e :U 167 ]
+"280
+[; ;Hormiga877.c: 280:             return PORTCbits.RC1;
+[e ) -> . . _PORTCbits 0 1 `uc ]
+[e $UE 158  ]
+"281
+[; ;Hormiga877.c: 281:             break;
+[e $U 159  ]
+"282
+[; ;Hormiga877.c: 282:         case 7:
+[e :U 168 ]
+"283
+[; ;Hormiga877.c: 283:             return PORTCbits.RC0;
+[e ) -> . . _PORTCbits 0 0 `uc ]
+[e $UE 158  ]
+"284
+[; ;Hormiga877.c: 284:             break;
+[e $U 159  ]
+"285
+[; ;Hormiga877.c: 285:         case 8:
+[e :U 169 ]
+"286
+[; ;Hormiga877.c: 286:             return PORTBbits.RB0;
+[e ) -> . . _PORTBbits 0 0 `uc ]
+[e $UE 158  ]
+"287
+[; ;Hormiga877.c: 287:             break;
+[e $U 159  ]
+"288
+[; ;Hormiga877.c: 288:         case 9:
+[e :U 170 ]
+"289
+[; ;Hormiga877.c: 289:             return PORTBbits.RB1;
+[e ) -> . . _PORTBbits 0 1 `uc ]
+[e $UE 158  ]
+"290
+[; ;Hormiga877.c: 290:             break;
+[e $U 159  ]
+"291
+[; ;Hormiga877.c: 291:         case 10:
+[e :U 171 ]
+"292
+[; ;Hormiga877.c: 292:             return PORTBbits.RB2;
+[e ) -> . . _PORTBbits 0 2 `uc ]
+[e $UE 158  ]
+"293
+[; ;Hormiga877.c: 293:             break;
+[e $U 159  ]
+"294
+[; ;Hormiga877.c: 294:         case 11:
+[e :U 172 ]
+"295
+[; ;Hormiga877.c: 295:             return PORTBbits.RB3;
+[e ) -> . . _PORTBbits 0 3 `uc ]
+[e $UE 158  ]
+"296
+[; ;Hormiga877.c: 296:             break;
+[e $U 159  ]
+"297
+[; ;Hormiga877.c: 297:         case 12:
+[e :U 173 ]
+"298
+[; ;Hormiga877.c: 298:             return PORTBbits.RB4;
+[e ) -> . . _PORTBbits 0 4 `uc ]
+[e $UE 158  ]
+"299
+[; ;Hormiga877.c: 299:             break;
+[e $U 159  ]
+"300
+[; ;Hormiga877.c: 300:         case 13:
+[e :U 174 ]
+"301
+[; ;Hormiga877.c: 301:             return PORTBbits.RB5;
+[e ) -> . . _PORTBbits 0 5 `uc ]
+[e $UE 158  ]
+"302
+[; ;Hormiga877.c: 302:             break;
+[e $U 159  ]
+"303
+[; ;Hormiga877.c: 303:         case 14:
+[e :U 175 ]
+"304
+[; ;Hormiga877.c: 304:             return PORTBbits.RB6;
+[e ) -> . . _PORTBbits 0 6 `uc ]
+[e $UE 158  ]
+"305
+[; ;Hormiga877.c: 305:             break;
+[e $U 159  ]
+"306
+[; ;Hormiga877.c: 306:         case 15:
+[e :U 176 ]
+"307
+[; ;Hormiga877.c: 307:             return PORTBbits.RB7;
+[e ) -> . . _PORTBbits 0 7 `uc ]
+[e $UE 158  ]
+"308
+[; ;Hormiga877.c: 308:             break;
+[e $U 159  ]
+"309
+[; ;Hormiga877.c: 309:         case 16:
+[e :U 177 ]
+"310
+[; ;Hormiga877.c: 310:             return PORTDbits.RD0;
+[e ) -> . . _PORTDbits 0 0 `uc ]
+[e $UE 158  ]
+"311
+[; ;Hormiga877.c: 311:             break;
+[e $U 159  ]
+"312
+[; ;Hormiga877.c: 312:         case 17:
+[e :U 178 ]
+"313
+[; ;Hormiga877.c: 313:             return PORTDbits.RD1;
+[e ) -> . . _PORTDbits 0 1 `uc ]
+[e $UE 158  ]
+"314
+[; ;Hormiga877.c: 314:             break;
+[e $U 159  ]
+"315
+[; ;Hormiga877.c: 315:         case 18:
+[e :U 179 ]
+"316
+[; ;Hormiga877.c: 316:             return PORTDbits.RD2;
+[e ) -> . . _PORTDbits 0 2 `uc ]
+[e $UE 158  ]
+"317
+[; ;Hormiga877.c: 317:             break;
+[e $U 159  ]
+"318
+[; ;Hormiga877.c: 318:         case 19:
+[e :U 180 ]
+"319
+[; ;Hormiga877.c: 319:             return PORTDbits.RD3;
+[e ) -> . . _PORTDbits 0 3 `uc ]
+[e $UE 158  ]
+"320
+[; ;Hormiga877.c: 320:             break;
+[e $U 159  ]
+"321
+[; ;Hormiga877.c: 321:         case 20:
+[e :U 181 ]
+"322
+[; ;Hormiga877.c: 322:             return PORTDbits.RD4;
+[e ) -> . . _PORTDbits 0 4 `uc ]
+[e $UE 158  ]
+"323
+[; ;Hormiga877.c: 323:             break;
+[e $U 159  ]
+"324
+[; ;Hormiga877.c: 324:         case 21:
+[e :U 182 ]
+"325
+[; ;Hormiga877.c: 325:             return PORTDbits.RD5;
+[e ) -> . . _PORTDbits 0 5 `uc ]
+[e $UE 158  ]
+"326
+[; ;Hormiga877.c: 326:             break;
+[e $U 159  ]
+"327
+[; ;Hormiga877.c: 327:         case 22:
+[e :U 183 ]
+"328
+[; ;Hormiga877.c: 328:             return PORTDbits.RD6;
+[e ) -> . . _PORTDbits 0 6 `uc ]
+[e $UE 158  ]
+"329
+[; ;Hormiga877.c: 329:             break;
+[e $U 159  ]
+"330
+[; ;Hormiga877.c: 330:         case 23:
+[e :U 184 ]
+"331
+[; ;Hormiga877.c: 331:             return PORTDbits.RD7;
+[e ) -> . . _PORTDbits 0 7 `uc ]
+[e $UE 158  ]
+"332
+[; ;Hormiga877.c: 332:             break;
+[e $U 159  ]
+"333
+[; ;Hormiga877.c: 333:         case 24:
+[e :U 185 ]
+"334
+[; ;Hormiga877.c: 334:             return PORTAbits.RA4;
+[e ) -> . . _PORTAbits 0 4 `uc ]
+[e $UE 158  ]
+"335
+[; ;Hormiga877.c: 335:             break;
+[e $U 159  ]
+"344
+[; ;Hormiga877.c: 344:     }
+}
+[e $U 159  ]
+[e :U 160 ]
+[e [\ -> _pin `i , $ -> 0 `i 161
+ , $ -> 1 `i 162
+ , $ -> 2 `i 163
+ , $ -> 3 `i 164
+ , $ -> 4 `i 165
+ , $ -> 5 `i 166
+ , $ -> 6 `i 167
+ , $ -> 7 `i 168
+ , $ -> 8 `i 169
+ , $ -> 9 `i 170
+ , $ -> 10 `i 171
+ , $ -> 11 `i 172
+ , $ -> 12 `i 173
+ , $ -> 13 `i 174
+ , $ -> 14 `i 175
+ , $ -> 15 `i 176
+ , $ -> 16 `i 177
+ , $ -> 17 `i 178
+ , $ -> 18 `i 179
+ , $ -> 19 `i 180
+ , $ -> 20 `i 181
+ , $ -> 21 `i 182
+ , $ -> 22 `i 183
+ , $ -> 23 `i 184
+ , $ -> 24 `i 185
+ 159 ]
+[e :U 159 ]
+"345
+[; ;Hormiga877.c: 345: }
+[e :UE 158 ]
+}
+"346
+[; ;Hormiga877.c: 346: unsigned int analogRead(char channel)
+[v _analogRead `(ui ~T0 @X0 1 ef1`uc ]
+"347
+[; ;Hormiga877.c: 347: {
+{
+[e :U _analogRead ]
+"346
+[; ;Hormiga877.c: 346: unsigned int analogRead(char channel)
+[v _channel `uc ~T0 @X0 1 r1 ]
+"347
+[; ;Hormiga877.c: 347: {
+[f ]
+"348
+[; ;Hormiga877.c: 348:     switch(channel)
+[e $U 188  ]
+"349
+[; ;Hormiga877.c: 349:     {
+{
+"350
+[; ;Hormiga877.c: 350:         case 0:
+[e :U 189 ]
+"351
+[; ;Hormiga877.c: 351:             ADCON0bits.CHS2 = 0;
+[e = . . _ADCON0bits 1 4 -> -> 0 `i `uc ]
+"352
+[; ;Hormiga877.c: 352:             ADCON0bits.CHS1 = 0;
+[e = . . _ADCON0bits 1 3 -> -> 0 `i `uc ]
+"353
+[; ;Hormiga877.c: 353:             ADCON0bits.CHS0 = 0;
+[e = . . _ADCON0bits 1 2 -> -> 0 `i `uc ]
+"354
+[; ;Hormiga877.c: 354:             ADCON0bits.GO_DONE = 1;
+[e = . . _ADCON0bits 3 1 -> -> 1 `i `uc ]
+"355
+[; ;Hormiga877.c: 355:             while(ADCON0bits.GO_DONE != 0)
+[e $U 190  ]
+[e :U 191 ]
+"356
+[; ;Hormiga877.c: 356:             {
+{
+"358
+[; ;Hormiga877.c: 358:             }
+}
+[e :U 190 ]
+"355
+[; ;Hormiga877.c: 355:             while(ADCON0bits.GO_DONE != 0)
+[e $ != -> . . _ADCON0bits 3 1 `i -> 0 `i 191  ]
+[e :U 192 ]
+"359
+[; ;Hormiga877.c: 359:             return (ADRESH << 8)+ ADRESL;
+[e ) -> + << -> _ADRESH `i -> 8 `i -> _ADRESL `i `ui ]
+[e $UE 186  ]
+"360
+[; ;Hormiga877.c: 360:             break;
+[e $U 187  ]
+"361
+[; ;Hormiga877.c: 361:         case 1:
+[e :U 193 ]
+"362
+[; ;Hormiga877.c: 362:             ADCON0bits.CHS2 = 0;
+[e = . . _ADCON0bits 1 4 -> -> 0 `i `uc ]
+"363
+[; ;Hormiga877.c: 363:             ADCON0bits.CHS1 = 0;
+[e = . . _ADCON0bits 1 3 -> -> 0 `i `uc ]
+"364
+[; ;Hormiga877.c: 364:             ADCON0bits.CHS0 = 1;
+[e = . . _ADCON0bits 1 2 -> -> 1 `i `uc ]
+"365
+[; ;Hormiga877.c: 365:             ADCON0bits.GO_DONE = 1;
+[e = . . _ADCON0bits 3 1 -> -> 1 `i `uc ]
+"366
+[; ;Hormiga877.c: 366:             while(ADCON0bits.GO_DONE != 0)
+[e $U 194  ]
+[e :U 195 ]
+"367
+[; ;Hormiga877.c: 367:             {
+{
+"369
+[; ;Hormiga877.c: 369:             }
+}
+[e :U 194 ]
+"366
+[; ;Hormiga877.c: 366:             while(ADCON0bits.GO_DONE != 0)
+[e $ != -> . . _ADCON0bits 3 1 `i -> 0 `i 195  ]
+[e :U 196 ]
+"370
+[; ;Hormiga877.c: 370:             return (ADRESH << 8)+ ADRESL;
+[e ) -> + << -> _ADRESH `i -> 8 `i -> _ADRESL `i `ui ]
+[e $UE 186  ]
+"371
+[; ;Hormiga877.c: 371:             break;
+[e $U 187  ]
+"372
+[; ;Hormiga877.c: 372:         case 2:
+[e :U 197 ]
+"373
+[; ;Hormiga877.c: 373:             ADCON0bits.CHS2 = 0;
+[e = . . _ADCON0bits 1 4 -> -> 0 `i `uc ]
+"374
+[; ;Hormiga877.c: 374:             ADCON0bits.CHS1 = 1;
+[e = . . _ADCON0bits 1 3 -> -> 1 `i `uc ]
+"375
+[; ;Hormiga877.c: 375:             ADCON0bits.CHS0 = 0;
+[e = . . _ADCON0bits 1 2 -> -> 0 `i `uc ]
+"376
+[; ;Hormiga877.c: 376:             ADCON0bits.GO_DONE = 1;
+[e = . . _ADCON0bits 3 1 -> -> 1 `i `uc ]
+"377
+[; ;Hormiga877.c: 377:             while(ADCON0bits.GO_DONE != 0)
+[e $U 198  ]
+[e :U 199 ]
+"378
+[; ;Hormiga877.c: 378:             {
+{
+"380
+[; ;Hormiga877.c: 380:             }
+}
+[e :U 198 ]
+"377
+[; ;Hormiga877.c: 377:             while(ADCON0bits.GO_DONE != 0)
+[e $ != -> . . _ADCON0bits 3 1 `i -> 0 `i 199  ]
+[e :U 200 ]
+"381
+[; ;Hormiga877.c: 381:             return (ADRESH << 8)+ ADRESL;
+[e ) -> + << -> _ADRESH `i -> 8 `i -> _ADRESL `i `ui ]
+[e $UE 186  ]
+"382
+[; ;Hormiga877.c: 382:             break;
+[e $U 187  ]
+"383
+[; ;Hormiga877.c: 383:         case 3:
+[e :U 201 ]
+"384
+[; ;Hormiga877.c: 384:             ADCON0bits.CHS2 = 0;
+[e = . . _ADCON0bits 1 4 -> -> 0 `i `uc ]
+"385
+[; ;Hormiga877.c: 385:             ADCON0bits.CHS1 = 1;
+[e = . . _ADCON0bits 1 3 -> -> 1 `i `uc ]
+"386
+[; ;Hormiga877.c: 386:             ADCON0bits.CHS0 = 1;
+[e = . . _ADCON0bits 1 2 -> -> 1 `i `uc ]
+"387
+[; ;Hormiga877.c: 387:             ADCON0bits.GO_DONE = 1;
+[e = . . _ADCON0bits 3 1 -> -> 1 `i `uc ]
+"388
+[; ;Hormiga877.c: 388:             while(ADCON0bits.GO_DONE != 0)
+[e $U 202  ]
+[e :U 203 ]
+"389
+[; ;Hormiga877.c: 389:             {
+{
+"391
+[; ;Hormiga877.c: 391:             }
+}
+[e :U 202 ]
+"388
+[; ;Hormiga877.c: 388:             while(ADCON0bits.GO_DONE != 0)
+[e $ != -> . . _ADCON0bits 3 1 `i -> 0 `i 203  ]
+[e :U 204 ]
+"392
+[; ;Hormiga877.c: 392:             return (ADRESH << 8)+ ADRESL;
+[e ) -> + << -> _ADRESH `i -> 8 `i -> _ADRESL `i `ui ]
+[e $UE 186  ]
+"393
+[; ;Hormiga877.c: 393:             break;
+[e $U 187  ]
+"394
+[; ;Hormiga877.c: 394:         case 4:
+[e :U 205 ]
+"395
+[; ;Hormiga877.c: 395:             ADCON0bits.CHS2 = 1;
+[e = . . _ADCON0bits 1 4 -> -> 1 `i `uc ]
+"396
+[; ;Hormiga877.c: 396:             ADCON0bits.CHS1 = 0;
+[e = . . _ADCON0bits 1 3 -> -> 0 `i `uc ]
+"397
+[; ;Hormiga877.c: 397:             ADCON0bits.CHS0 = 0;
+[e = . . _ADCON0bits 1 2 -> -> 0 `i `uc ]
+"398
+[; ;Hormiga877.c: 398:             ADCON0bits.GO_DONE = 1;
+[e = . . _ADCON0bits 3 1 -> -> 1 `i `uc ]
+"399
+[; ;Hormiga877.c: 399:             while(ADCON0bits.GO_DONE != 0)
+[e $U 206  ]
+[e :U 207 ]
+"400
+[; ;Hormiga877.c: 400:             {
+{
+"402
+[; ;Hormiga877.c: 402:             }
+}
+[e :U 206 ]
+"399
+[; ;Hormiga877.c: 399:             while(ADCON0bits.GO_DONE != 0)
+[e $ != -> . . _ADCON0bits 3 1 `i -> 0 `i 207  ]
+[e :U 208 ]
+"403
+[; ;Hormiga877.c: 403:             return (ADRESH << 8)+ ADRESL;
+[e ) -> + << -> _ADRESH `i -> 8 `i -> _ADRESL `i `ui ]
+[e $UE 186  ]
+"404
+[; ;Hormiga877.c: 404:             break;
+[e $U 187  ]
+"405
+[; ;Hormiga877.c: 405:     }
+}
+[e $U 187  ]
+[e :U 188 ]
+[e [\ -> _channel `i , $ -> 0 `i 189
+ , $ -> 1 `i 193
+ , $ -> 2 `i 197
+ , $ -> 3 `i 201
+ , $ -> 4 `i 205
+ 187 ]
+[e :U 187 ]
+"406
+[; ;Hormiga877.c: 406: }
+[e :UE 186 ]
+}
+"407
+[; ;Hormiga877.c: 407: uint8_t analogWrite(char pin, unsigned int value)
+[v _analogWrite `(uc ~T0 @X0 1 ef2`uc`ui ]
+"408
+[; ;Hormiga877.c: 408: {
+{
+[e :U _analogWrite ]
+"407
+[; ;Hormiga877.c: 407: uint8_t analogWrite(char pin, unsigned int value)
+[v _pin `uc ~T0 @X0 1 r1 ]
+[v _value `ui ~T0 @X0 1 r2 ]
+"408
+[; ;Hormiga877.c: 408: {
+[f ]
+"409
+[; ;Hormiga877.c: 409:     switch(pin)
+[e $U 211  ]
+"410
+[; ;Hormiga877.c: 410:     {
+{
+"411
+[; ;Hormiga877.c: 411:         case 6:
+[e :U 212 ]
+"412
+[; ;Hormiga877.c: 412:             CCPR2L = value >> 2;
+[e = _CCPR2L -> >> _value -> 2 `i `uc ]
+"413
+[; ;Hormiga877.c: 413:             CCP2X = value & 2;
+[e = _CCP2X -> & _value -> -> 2 `i `ui `b ]
+"414
+[; ;Hormiga877.c: 414:             CCP2Y = value & 1;
+[e = _CCP2Y -> & _value -> -> 1 `i `ui `b ]
+"415
+[; ;Hormiga877.c: 415:             break;
+[e $U 210  ]
+"416
+[; ;Hormiga877.c: 416:         case 5:
+[e :U 213 ]
+"417
+[; ;Hormiga877.c: 417:             CCPR1L = value >> 2;
+[e = _CCPR1L -> >> _value -> 2 `i `uc ]
+"418
+[; ;Hormiga877.c: 418:             CCP1X = value & 2;
+[e = _CCP1X -> & _value -> -> 2 `i `ui `b ]
+"419
+[; ;Hormiga877.c: 419:             CCP1Y = value & 1;
+[e = _CCP1Y -> & _value -> -> 1 `i `ui `b ]
+"420
+[; ;Hormiga877.c: 420:             break;
+[e $U 210  ]
+"421
+[; ;Hormiga877.c: 421:     }
+}
+[e $U 210  ]
+[e :U 211 ]
+[e [\ -> _pin `i , $ -> 6 `i 212
+ , $ -> 5 `i 213
+ 210 ]
+[e :U 210 ]
+"422
+[; ;Hormiga877.c: 422:     return 0;
+[e ) -> -> 0 `i `uc ]
+[e $UE 209  ]
+"423
+[; ;Hormiga877.c: 423: }
+[e :UE 209 ]
+}
+"425
+[; ;Hormiga877.c: 425: char PBRead(char pin)
+[v _PBRead `(uc ~T0 @X0 1 ef1`uc ]
+"426
+[; ;Hormiga877.c: 426: {
+{
+[e :U _PBRead ]
+"425
+[; ;Hormiga877.c: 425: char PBRead(char pin)
+[v _pin `uc ~T0 @X0 1 r1 ]
+"426
+[; ;Hormiga877.c: 426: {
+[f ]
+"427
+[; ;Hormiga877.c: 427:     switch(pin)
+[e $U 216  ]
+"428
+[; ;Hormiga877.c: 428:     {
+{
+"429
+[; ;Hormiga877.c: 429:         case 0:
+[e :U 217 ]
+"430
+[; ;Hormiga877.c: 430:             if(PORTEbits.RE0)
+[e $ ! != -> . . _PORTEbits 0 0 `i -> 0 `i 218  ]
+"431
+[; ;Hormiga877.c: 431:             {
+{
+"432
+[; ;Hormiga877.c: 432:                 delay(100);
+[e ( _delay (1 -> 100 `i ]
+"433
+[; ;Hormiga877.c: 433:                 return (PORTEbits.RE0) ? 1 : 0;
+[e ) -> ? != -> . . _PORTEbits 0 0 `i -> 0 `i : -> 1 `i -> 0 `i `uc ]
+[e $UE 214  ]
+"434
+[; ;Hormiga877.c: 434:             }
+}
+[e $U 219  ]
+"435
+[; ;Hormiga877.c: 435:             else
+[e :U 218 ]
+"436
+[; ;Hormiga877.c: 436:             {
+{
+"437
+[; ;Hormiga877.c: 437:                 return 0;
+[e ) -> -> 0 `i `uc ]
+[e $UE 214  ]
+"438
+[; ;Hormiga877.c: 438:             }
+}
+[e :U 219 ]
+"439
+[; ;Hormiga877.c: 439:             break;
+[e $U 215  ]
+"440
+[; ;Hormiga877.c: 440:         case 1:
+[e :U 220 ]
+"441
+[; ;Hormiga877.c: 441:             if(PORTEbits.RE1)
+[e $ ! != -> . . _PORTEbits 0 1 `i -> 0 `i 221  ]
+"442
+[; ;Hormiga877.c: 442:             {
+{
+"443
+[; ;Hormiga877.c: 443:                 delay(100);
+[e ( _delay (1 -> 100 `i ]
+"444
+[; ;Hormiga877.c: 444:                 return (PORTEbits.RE1) ? 1 : 0;
+[e ) -> ? != -> . . _PORTEbits 0 1 `i -> 0 `i : -> 1 `i -> 0 `i `uc ]
+[e $UE 214  ]
+"445
+[; ;Hormiga877.c: 445:             }
+}
+[e $U 222  ]
+"446
+[; ;Hormiga877.c: 446:             else
+[e :U 221 ]
+"447
+[; ;Hormiga877.c: 447:             {
+{
+"448
+[; ;Hormiga877.c: 448:                 return 0;
+[e ) -> -> 0 `i `uc ]
+[e $UE 214  ]
+"449
+[; ;Hormiga877.c: 449:             }
+}
+[e :U 222 ]
+"450
+[; ;Hormiga877.c: 450:             break;
+[e $U 215  ]
+"451
+[; ;Hormiga877.c: 451:         case 2:
+[e :U 223 ]
+"452
+[; ;Hormiga877.c: 452:             if(PORTEbits.RE2)
+[e $ ! != -> . . _PORTEbits 0 2 `i -> 0 `i 224  ]
+"453
+[; ;Hormiga877.c: 453:             {
+{
+"454
+[; ;Hormiga877.c: 454:                 delay(120);
+[e ( _delay (1 -> 120 `i ]
+"455
+[; ;Hormiga877.c: 455:                 return (PORTEbits.RE2) ? 1 : 0;
+[e ) -> ? != -> . . _PORTEbits 0 2 `i -> 0 `i : -> 1 `i -> 0 `i `uc ]
+[e $UE 214  ]
+"456
+[; ;Hormiga877.c: 456:             }
+}
+[e $U 225  ]
+"457
+[; ;Hormiga877.c: 457:             else
+[e :U 224 ]
+"458
+[; ;Hormiga877.c: 458:             {
+{
+"459
+[; ;Hormiga877.c: 459:                 return 0;
+[e ) -> -> 0 `i `uc ]
+[e $UE 214  ]
+"460
+[; ;Hormiga877.c: 460:             }
+}
+[e :U 225 ]
+"461
+[; ;Hormiga877.c: 461:             break;
+[e $U 215  ]
+"462
+[; ;Hormiga877.c: 462:     }
+}
+[e $U 215  ]
+[e :U 216 ]
+[e [\ -> _pin `i , $ -> 0 `i 217
+ , $ -> 1 `i 220
+ , $ -> 2 `i 223
+ 215 ]
+[e :U 215 ]
+"463
+[; ;Hormiga877.c: 463: }
+[e :UE 214 ]
+}
+"465
+[; ;Hormiga877.c: 465: char SerialBegin(const long int BaudRate)
+[v _SerialBegin `(uc ~T0 @X0 1 ef1`Cl ]
+"466
+[; ;Hormiga877.c: 466: {
+{
+[e :U _SerialBegin ]
+"465
+[; ;Hormiga877.c: 465: char SerialBegin(const long int BaudRate)
+[v _BaudRate `Cl ~T0 @X0 1 r1 ]
+"466
+[; ;Hormiga877.c: 466: {
+[f ]
+"470
+[; ;Hormiga877.c: 470:  unsigned int x;
+[v _x `ui ~T0 @X0 1 a ]
+"471
+[; ;Hormiga877.c: 471:  BRGH = 0;
+[e = _BRGH -> -> 0 `i `b ]
+"472
+[; ;Hormiga877.c: 472:  x = (20000000 / (64 * BaudRate)) - 1;
+[e = _x -> - / -> 20000000 `l * -> -> 64 `i `l _BaudRate -> -> 1 `i `l `ui ]
+"473
+[; ;Hormiga877.c: 473:  if(x > 255)
+[e $ ! > _x -> -> 255 `i `ui 227  ]
+"474
+[; ;Hormiga877.c: 474:  {
+{
+"475
+[; ;Hormiga877.c: 475:   BRGH = 1;
+[e = _BRGH -> -> 1 `i `b ]
+"476
+[; ;Hormiga877.c: 476:   x = (20000000 / (16 * BaudRate)) - 1;
+[e = _x -> - / -> 20000000 `l * -> -> 16 `i `l _BaudRate -> -> 1 `i `l `ui ]
+"477
+[; ;Hormiga877.c: 477:   SPBRG = x;
+[e = _SPBRG -> _x `uc ]
+"478
+[; ;Hormiga877.c: 478:   SYNC = 0;
+[e = _SYNC -> -> 0 `i `b ]
+"479
+[; ;Hormiga877.c: 479:   SPEN = 1;
+[e = _SPEN -> -> 1 `i `b ]
+"480
+[; ;Hormiga877.c: 480:   TRISC7 = 1;
+[e = _TRISC7 -> -> 1 `i `b ]
+"481
+[; ;Hormiga877.c: 481:   TRISC6 = 1;
+[e = _TRISC6 -> -> 1 `i `b ]
+"482
+[; ;Hormiga877.c: 482:   CREN = 1;
+[e = _CREN -> -> 1 `i `b ]
+"483
+[; ;Hormiga877.c: 483:   TXEN = 1;
+[e = _TXEN -> -> 1 `i `b ]
+"484
+[; ;Hormiga877.c: 484:         TXREG = 0x00;
+[e = _TXREG -> -> 0 `i `uc ]
+"485
+[; ;Hormiga877.c: 485:         RCREG = 0x00;
+[e = _RCREG -> -> 0 `i `uc ]
+"486
+[; ;Hormiga877.c: 486:   return 0;
+[e ) -> -> 0 `i `uc ]
+[e $UE 226  ]
+"487
+[; ;Hormiga877.c: 487:  }
+}
+[e $U 228  ]
+"488
+[; ;Hormiga877.c: 488:  else
+[e :U 227 ]
+"489
+[; ;Hormiga877.c: 489:  {
+{
+"490
+[; ;Hormiga877.c: 490:   SPBRG = x;
+[e = _SPBRG -> _x `uc ]
+"491
+[; ;Hormiga877.c: 491:   SYNC = 0;
+[e = _SYNC -> -> 0 `i `b ]
+"492
+[; ;Hormiga877.c: 492:   SPEN = 1;
+[e = _SPEN -> -> 1 `i `b ]
+"493
+[; ;Hormiga877.c: 493:   TRISC7 = 1;
+[e = _TRISC7 -> -> 1 `i `b ]
+"494
+[; ;Hormiga877.c: 494:   TRISC6 = 1;
+[e = _TRISC6 -> -> 1 `i `b ]
+"495
+[; ;Hormiga877.c: 495:   CREN = 1;
+[e = _CREN -> -> 1 `i `b ]
+"496
+[; ;Hormiga877.c: 496:   TXEN = 1;
+[e = _TXEN -> -> 1 `i `b ]
+"497
+[; ;Hormiga877.c: 497:         TXREG = 0x00;
+[e = _TXREG -> -> 0 `i `uc ]
+"498
+[; ;Hormiga877.c: 498:         RCREG = 0x00;
+[e = _RCREG -> -> 0 `i `uc ]
+"499
+[; ;Hormiga877.c: 499:   return 1;
+[e ) -> -> 1 `i `uc ]
+[e $UE 226  ]
+"500
+[; ;Hormiga877.c: 500:  }
+}
+[e :U 228 ]
+"501
+[; ;Hormiga877.c: 501: }
+[e :UE 226 ]
+}
+"503
+[; ;Hormiga877.c: 503: char TxRegisterFull(void)
+[v _TxRegisterFull `(uc ~T0 @X0 1 ef ]
+"504
+[; ;Hormiga877.c: 504: {
+{
+[e :U _TxRegisterFull ]
+[f ]
+"505
+[; ;Hormiga877.c: 505:     return TRMT;
+[e ) -> _TRMT `uc ]
+[e $UE 229  ]
+"506
+[; ;Hormiga877.c: 506: }
+[e :UE 229 ]
+}
+"507
+[; ;Hormiga877.c: 507: char SerialErrors(void)
+[v _SerialErrors `(uc ~T0 @X0 1 ef ]
+"508
+[; ;Hormiga877.c: 508: {
+{
+[e :U _SerialErrors ]
+[f ]
+"509
+[; ;Hormiga877.c: 509:     if((FERR == 1) && (FERR || OERR))
+[e $ ! && == -> _FERR `i -> 1 `i || _FERR _OERR 231  ]
+"510
+[; ;Hormiga877.c: 510:     {
+{
+"511
+[; ;Hormiga877.c: 511:         return 1;
+[e ) -> -> 1 `i `uc ]
+[e $UE 230  ]
+"512
+[; ;Hormiga877.c: 512:     }
+}
+[e $U 232  ]
+"513
+[; ;Hormiga877.c: 513:     else if((OERR == 1) && (FERR || OERR))
+[e :U 231 ]
+[e $ ! && == -> _OERR `i -> 1 `i || _FERR _OERR 233  ]
+"514
+[; ;Hormiga877.c: 514:     {
+{
+"515
+[; ;Hormiga877.c: 515:         return 2;
+[e ) -> -> 2 `i `uc ]
+[e $UE 230  ]
+"516
+[; ;Hormiga877.c: 516:     }
+}
+[e $U 234  ]
+"517
+[; ;Hormiga877.c: 517:     else if(OERR && FERR)
+[e :U 233 ]
+[e $ ! && _OERR _FERR 235  ]
+"518
+[; ;Hormiga877.c: 518:     {
+{
+"519
+[; ;Hormiga877.c: 519:         return 3;
+[e ) -> -> 3 `i `uc ]
+[e $UE 230  ]
+"520
+[; ;Hormiga877.c: 520:     }
+}
+[e $U 236  ]
+"521
+[; ;Hormiga877.c: 521:     else
+[e :U 235 ]
+"522
+[; ;Hormiga877.c: 522:     {
+{
+"523
+[; ;Hormiga877.c: 523:         return 0;
+[e ) -> -> 0 `i `uc ]
+[e $UE 230  ]
+"524
+[; ;Hormiga877.c: 524:     }
+}
+[e :U 236 ]
+[e :U 234 ]
+[e :U 232 ]
+"525
+[; ;Hormiga877.c: 525: }
+[e :UE 230 ]
+}
+"526
+[; ;Hormiga877.c: 526: void SerialWrite(char dataWrite)
+[v _SerialWrite `(v ~T0 @X0 1 ef1`uc ]
+"527
+[; ;Hormiga877.c: 527: {
+{
+[e :U _SerialWrite ]
+"526
+[; ;Hormiga877.c: 526: void SerialWrite(char dataWrite)
+[v _dataWrite `uc ~T0 @X0 1 r1 ]
+"527
+[; ;Hormiga877.c: 527: {
+[f ]
+"528
+[; ;Hormiga877.c: 528:     while(!TXIF);
+[e $U 238  ]
+[e :U 239 ]
+[e :U 238 ]
+[e $ ! _TXIF 239  ]
+[e :U 240 ]
+"529
+[; ;Hormiga877.c: 529:     TXREG = dataWrite;
+[e = _TXREG -> _dataWrite `uc ]
+"530
+[; ;Hormiga877.c: 530: }
+[e :UE 237 ]
+}
+"532
+[; ;Hormiga877.c: 532: char SerialWriteText(char *dataText)
+[v _SerialWriteText `(uc ~T0 @X0 1 ef1`*uc ]
+"533
+[; ;Hormiga877.c: 533: {
+{
+[e :U _SerialWriteText ]
+"532
+[; ;Hormiga877.c: 532: char SerialWriteText(char *dataText)
+[v _dataText `*uc ~T0 @X0 1 r1 ]
+"533
+[; ;Hormiga877.c: 533: {
+[f ]
+"534
+[; ;Hormiga877.c: 534:     unsigned int i;
+[v _i `ui ~T0 @X0 1 a ]
+"535
+[; ;Hormiga877.c: 535:     for(i=0;dataText[i]!='\0';i++)
+{
+[e = _i -> -> 0 `i `ui ]
+[e $U 245  ]
+[e :U 242 ]
+"536
+[; ;Hormiga877.c: 536:     {
+{
+"537
+[; ;Hormiga877.c: 537:        SerialWrite(dataText[i]);
+[e ( _SerialWrite (1 *U + _dataText * -> _i `ux -> -> # *U _dataText `ui `ux ]
+"538
+[; ;Hormiga877.c: 538:     }
+}
+[e ++ _i -> -> 1 `i `ui ]
+[e :U 245 ]
+[e $ != -> *U + _dataText * -> _i `ux -> -> # *U _dataText `ui `ux `ui -> 0 `ui 242  ]
+[e :U 243 ]
+}
+"539
+[; ;Hormiga877.c: 539: }
+[e :UE 241 ]
+}
+"540
+[; ;Hormiga877.c: 540: void SerialPrint(char *dataText)
+[v _SerialPrint `(v ~T0 @X0 1 ef1`*uc ]
+"541
+[; ;Hormiga877.c: 541: {
+{
+[e :U _SerialPrint ]
+"540
+[; ;Hormiga877.c: 540: void SerialPrint(char *dataText)
+[v _dataText `*uc ~T0 @X0 1 r1 ]
+"541
+[; ;Hormiga877.c: 541: {
+[f ]
+"542
+[; ;Hormiga877.c: 542:     for(unsigned int i=0;dataText[i]!='\0';i++)
+{
+[v _i `ui ~T0 @X0 1 a ]
+[e = _i -> -> 0 `i `ui ]
+[e $U 250  ]
+[e :U 247 ]
+"543
+[; ;Hormiga877.c: 543:     {
+{
+"544
+[; ;Hormiga877.c: 544:         SerialWrite(dataText[i]);
+[e ( _SerialWrite (1 *U + _dataText * -> _i `ux -> -> # *U _dataText `ui `ux ]
+"545
+[; ;Hormiga877.c: 545:     }
+}
+[e ++ _i -> -> 1 `i `ui ]
+[e :U 250 ]
+[e $ != -> *U + _dataText * -> _i `ux -> -> # *U _dataText `ui `ux `ui -> 0 `ui 247  ]
+[e :U 248 ]
+}
+"546
+[; ;Hormiga877.c: 546: }
+[e :UE 246 ]
+}
+"547
+[; ;Hormiga877.c: 547: void SerialPrintLn(char *dataText)
+[v _SerialPrintLn `(v ~T0 @X0 1 ef1`*uc ]
+"548
+[; ;Hormiga877.c: 548: {
+{
+[e :U _SerialPrintLn ]
+"547
+[; ;Hormiga877.c: 547: void SerialPrintLn(char *dataText)
+[v _dataText `*uc ~T0 @X0 1 r1 ]
+"548
+[; ;Hormiga877.c: 548: {
+[f ]
+"549
+[; ;Hormiga877.c: 549:     unsigned int i;
+[v _i `ui ~T0 @X0 1 a ]
+"550
+[; ;Hormiga877.c: 550:         for(i=0;dataText[i]!='\0';i++)
+{
+[e = _i -> -> 0 `i `ui ]
+[e $U 255  ]
+[e :U 252 ]
+"551
+[; ;Hormiga877.c: 551:         {
+{
+"552
+[; ;Hormiga877.c: 552:             SerialWrite(dataText[i]);
+[e ( _SerialWrite (1 *U + _dataText * -> _i `ux -> -> # *U _dataText `ui `ux ]
+"553
+[; ;Hormiga877.c: 553:         }
+}
+[e ++ _i -> -> 1 `i `ui ]
+[e :U 255 ]
+[e $ != -> *U + _dataText * -> _i `ux -> -> # *U _dataText `ui `ux `ui -> 0 `ui 252  ]
+[e :U 253 ]
+}
+"554
+[; ;Hormiga877.c: 554:         SerialWrite(0x0A);
+[e ( _SerialWrite (1 -> -> 10 `i `uc ]
+"555
+[; ;Hormiga877.c: 555: }
+[e :UE 251 ]
+}
+"556
+[; ;Hormiga877.c: 556: char SerialAvailable(void)
+[v _SerialAvailable `(uc ~T0 @X0 1 ef ]
+"557
+[; ;Hormiga877.c: 557: {
+{
+[e :U _SerialAvailable ]
+[f ]
+"558
+[; ;Hormiga877.c: 558:     return RCIF || (TXIF && TRMT);
+[e ) -> -> || _RCIF && _TXIF _TRMT `i `uc ]
+[e $UE 256  ]
+"559
+[; ;Hormiga877.c: 559: }
+[e :UE 256 ]
+}
+"561
+[; ;Hormiga877.c: 561: char SerialRead(void)
+[v _SerialRead `(uc ~T0 @X0 1 ef ]
+"562
+[; ;Hormiga877.c: 562: {
+{
+[e :U _SerialRead ]
+[f ]
+"563
+[; ;Hormiga877.c: 563:     while(!RCIF);
+[e $U 258  ]
+[e :U 259 ]
+[e :U 258 ]
+[e $ ! _RCIF 259  ]
+[e :U 260 ]
+"564
+[; ;Hormiga877.c: 564:     return RCREG;
+[e ) -> _RCREG `uc ]
+[e $UE 257  ]
+"565
+[; ;Hormiga877.c: 565: }
+[e :UE 257 ]
+}
+"567
+[; ;Hormiga877.c: 567: void SerialReadText(char *Output, unsigned int lenght)
+[v _SerialReadText `(v ~T0 @X0 1 ef2`*uc`ui ]
+"568
+[; ;Hormiga877.c: 568: {
+{
+[e :U _SerialReadText ]
+"567
+[; ;Hormiga877.c: 567: void SerialReadText(char *Output, unsigned int lenght)
+[v _Output `*uc ~T0 @X0 1 r1 ]
+[v _lenght `ui ~T0 @X0 1 r2 ]
+"568
+[; ;Hormiga877.c: 568: {
+[f ]
+"569
+[; ;Hormiga877.c: 569:     unsigned int i;
+[v _i `ui ~T0 @X0 1 a ]
+"570
+[; ;Hormiga877.c: 570:     for(i=0;i<lenght;i++)
+{
+[e = _i -> -> 0 `i `ui ]
+[e $U 265  ]
+[e :U 262 ]
+"571
+[; ;Hormiga877.c: 571:     {
+{
+"572
+[; ;Hormiga877.c: 572:         Output[i] = SerialRead();
+[e = *U + _Output * -> _i `ux -> -> # *U _Output `ui `ux ( _SerialRead ..  ]
+"573
+[; ;Hormiga877.c: 573:     }
+}
+[e ++ _i -> -> 1 `i `ui ]
+[e :U 265 ]
+[e $ < _i _lenght 262  ]
+[e :U 263 ]
+}
+"574
+[; ;Hormiga877.c: 574: }
+[e :UE 261 ]
+}
+"576
+[; ;Hormiga877.c: 576: void delay(const int milis)
+[v _delay `(v ~T0 @X0 1 ef1`Ci ]
+"577
+[; ;Hormiga877.c: 577: {
+{
+[e :U _delay ]
+"576
+[; ;Hormiga877.c: 576: void delay(const int milis)
+[v _milis `Ci ~T0 @X0 1 r1 ]
+"577
+[; ;Hormiga877.c: 577: {
+[f ]
+"578
+[; ;Hormiga877.c: 578:     for(int j=0;j<milis;j++)
+{
+[v _j `i ~T0 @X0 1 a ]
+[e = _j -> 0 `i ]
+[e $ < _j _milis 267  ]
+[e $U 268  ]
+[e :U 267 ]
+"579
+[; ;Hormiga877.c: 579:     {
+{
+"581
+[; ;Hormiga877.c: 581:         for(int i=0;i<235;i++)
+{
+[v _i `i ~T0 @X0 1 a ]
+[e = _i -> 0 `i ]
+[e $ < _i -> 235 `i 270  ]
+[e $U 271  ]
+[e :U 270 ]
+"582
+[; ;Hormiga877.c: 582:         {
+{
+"583
+[; ;Hormiga877.c: 583:             __asm("NOP");
+[; <" NOP ;# ">
+"584
+[; ;Hormiga877.c: 584:         }
+}
+[e ++ _i -> 1 `i ]
+[e $ < _i -> 235 `i 270  ]
+[e :U 271 ]
+}
+"585
+[; ;Hormiga877.c: 585:     }
+}
+[e ++ _j -> 1 `i ]
+[e $ < _j _milis 267  ]
+[e :U 268 ]
+}
+"586
+[; ;Hormiga877.c: 586: }
+[e :UE 266 ]
+}
+"588
+[; ;Hormiga877.c: 588: void delayMicroseconds(const int us)
+[v _delayMicroseconds `(v ~T0 @X0 1 ef1`Ci ]
+"589
+[; ;Hormiga877.c: 589: {
+{
+[e :U _delayMicroseconds ]
+"588
+[; ;Hormiga877.c: 588: void delayMicroseconds(const int us)
+[v _us `Ci ~T0 @X0 1 r1 ]
+"589
+[; ;Hormiga877.c: 589: {
+[f ]
+"590
+[; ;Hormiga877.c: 590:     for(char i=0;i<us;i++)
+{
+[v _i `uc ~T0 @X0 1 a ]
+[e = _i -> -> 0 `i `uc ]
+[e $ < -> _i `i _us 274  ]
+[e $U 275  ]
+[e :U 274 ]
+"591
+[; ;Hormiga877.c: 591:     {
+{
+"592
+[; ;Hormiga877.c: 592:         __asm("NOP");
+[; <" NOP ;# ">
+"593
+[; ;Hormiga877.c: 593:     }
+}
+[e ++ _i -> -> 1 `i `uc ]
+[e $ < -> _i `i _us 274  ]
+[e :U 275 ]
+}
+"594
+[; ;Hormiga877.c: 594: }
+[e :UE 273 ]
+}
